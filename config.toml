@@ -1,7 +1,8 @@
 baseURL = "https://khoidep-zai.github.io/fcj-workshop-template-NBAK/"
 relativeURLs = false
 canonifyURLs = false
-defaultContentLanguage = "en"
+defaultContentLanguage = "vi"
+defaultContentLanguageInSubdir = true
 
 # Change the default theme to be use when building the site with Hugo
 theme = "hugo-theme-learn"
