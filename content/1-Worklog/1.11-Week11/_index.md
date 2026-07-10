@@ -6,27 +6,27 @@ chapter: false
 pre: " <b> 1.11. </b> "
 ---
 
-## Week 11: Comprehensive Testing, Blog Writing and Workshop Participation (13/07/2026 - 17/07/2026)
+## Week 11: Comprehensive Testing, Blog Writing, and Workshop Participation (13/07/2026 - 17/07/2026)
 
 **Week 11 Objectives:**
 
-- Kiểm thử toàn diện hệ thống về tải, bảo mật và độ ổn định.
-- Viết blog chia sẻ kiến thức và tham gia workshop xử lý ảnh bất đồng bộ với S3, SQS, Lambda.
+- Conduct comprehensive testing on load capacity, security, and system stability.
+- Write a technical blog sharing knowledge and participate in an asynchronous image processing workshop using S3, SQS, and Lambda.
 
 **Tasks completed this week:**
 
-| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
-|-----|-----------|--------------|-----------------|----------------|
-| 2 | Kiểm thử tải: upload nhiều ảnh đồng thời (30-50 ảnh). Ghi nhận giới hạn và đề xuất phương án mở rộng khi quy mô lớn hơn. | 13/07/2026 | 13/07/2026 | |
-| 3 | Kiểm thử bảo mật: rà soát toàn bộ IAM Policy theo nguyên tắc Least Privilege. Rà soát Cognito và API Gateway. | 14/07/2026 | 14/07/2026 | |
-| 4 | Viết bài blog chia sẻ kiến thức kỹ thuật về luồng xử lý ảnh S3→SQS→Lambda và đăng lên AWS Study Group. Xin góp ý từ mentor. | 15/07/2026 | 15/07/2026 | http://awsstudygroup.com |
-| 5 | Tham gia Workshop: Xây dựng luồng xử lý hình ảnh bất đồng bộ sử dụng Amazon S3, SQS và AWS Lambda. Thực hành đầy đủ 6 bước. | 16/07/2026 | 16/07/2026 | https://cloudjourney.awsstudygroup.com/vi/ |
-| 6 | Tổng hợp toàn bộ kết quả kiểm thử (tải, bảo mật, chi phí). Lập danh sách lỗi và hạn chế cần khắc phục trước khi bàn giao. | 17/07/2026 | 17/07/2026 | |
+| Day | Task | Start Date | Completion Date | Reference |
+|-----|------|------------|-----------------|-----------|
+| Mon | Load testing: Upload multiple images simultaneously (30–50 images). Record system limits and propose scaling solutions for larger workloads. | 13/07/2026 | 13/07/2026 | |
+| Tue | Security testing: Review all IAM Policies against the Least Privilege principle. Inspect Cognito User Pool and API Gateway configurations. | 14/07/2026 | 14/07/2026 | |
+| Wed | Write a technical blog post sharing knowledge about the S3→SQS→Lambda image processing architecture and publish it on the AWS Study Group. Request feedback from the mentor. | 15/07/2026 | 15/07/2026 | http://awsstudygroup.com |
+| Thu | Participate in Workshop: Build an asynchronous image processing pipeline using Amazon S3, SQS, and AWS Lambda. Complete all 6 hands-on steps. | 16/07/2026 | 16/07/2026 | https://cloudjourney.awsstudygroup.com/vi/ |
+| Fri | Summarize all test results (load, security, cost estimation). Create a comprehensive list of bugs and limitations that need to be resolved before handover. | 17/07/2026 | 17/07/2026 | |
 
 **Week 11 Results:**
 
-- Hoàn thành kiểm thử tải, xác định được ngưỡng hoạt động ổn định của hệ thống.
-- Hoàn thành rà soát bảo mật, đảm bảo các IAM Policy và Cognito tuân thủ nguyên tắc Least Privilege.
-- Viết và đăng thành công bài blog kỹ thuật lên AWS Study Group, nhận được phản hồi tích cực.
-- Hoàn thành workshop xử lý ảnh bất đồng bộ S3→SQS→Lambda, củng cố kiến thức thực hành toàn bộ kiến trúc của dự án.
-- Lập được danh sách đầy đủ các lỗi và hạn chế cần khắc phục, chuẩn bị cho giai đoạn hoàn thiện.
+- Completed load testing and identified the stable operating threshold of the system.
+- Completed security reviews, ensuring all IAM Policies and Cognito settings strictly follow the Least Privilege principle.
+- Successfully wrote and published a technical blog post on the AWS Study Group, receiving positive feedback.
+- Completed the S3→SQS→Lambda asynchronous image processing workshop, reinforcing hands-on knowledge of the project's architecture.
+- Compiled a complete list of bugs and limitations to be addressed in the finalization phase.

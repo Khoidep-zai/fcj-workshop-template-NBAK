@@ -10,22 +10,21 @@ pre: " <b> 7. </b> "
 
 In this section, the intern freely shares personal feedback about their experience participating in the First Cloud AI Journey program, with the aim of helping the FCAJ team improve any shortcomings.
 
+<div style="text-align: left;">
+
 ## 1. General Feedback
 
-**Work Environment:**
-The work environment was very friendly and open. Members of the FCAJ team were always ready to help when I encountered difficulties, even outside of working hours. The workspace was tidy and comfortable, which helped me stay focused.
+- **Work Environment:** The work environment was very friendly and open. Members of the FCAJ team were always ready to help when I encountered difficulties, even outside of working hours. The workspace was tidy and comfortable, which helped me stay focused.
 
-**Mentor and Admin Team Support:**
-The mentor provided very detailed guidance, explained things clearly when I didn't understand, and always encouraged me to ask questions. I especially appreciated how the mentor allowed me to try things myself and work through problems rather than simply providing the answer.
+- **Mentor and Admin Team Support:** The mentor provided very detailed guidance, explained things clearly when I didn't understand, and always encouraged me to ask questions. I especially appreciated how the mentor allowed me to try things myself and work through problems rather than simply providing the answer.
 
-**Alignment Between Work and Academic Major:**
-The tasks I was assigned were well aligned with my Software Engineering background from university, while also expanding my knowledge into new areas such as cloud architecture design, AI/ML, and DevOps on AWS.
+- **Alignment Between Work and Academic Major:** The tasks I was assigned were well aligned with my Software Engineering background from university, while also expanding my knowledge into new areas such as cloud architecture design, AI/ML, and DevOps on AWS.
 
-**Learning and Skill Development Opportunities:**
-During the internship, I gained many new skills: designing Serverless systems, using AWS AI/ML services, writing technical blogs, and participating in hands-on workshops. The mentor shared a lot of practical experience that helped me develop a clearer direction.
+- **Learning and Skill Development Opportunities:** During the internship, I gained many new skills: designing Serverless systems, using AWS AI/ML services, writing technical blogs, and participating in hands-on workshops. The mentor shared a lot of practical experience that helped me develop a clearer direction.
 
-**Culture and Team Spirit:**
-The FCAJ culture was very positive: everyone respected each other, worked seriously but with a friendly atmosphere. This made me feel like a part of the team, even as an intern.
+- **Culture and Team Spirit:** The FCAJ culture was very positive: everyone respected each other, worked seriously but with a friendly atmosphere. This made me feel like a part of the team, even as an intern.
+
+</div>
 
 ## 2. Additional Questions
 

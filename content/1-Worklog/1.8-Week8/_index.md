@@ -10,22 +10,22 @@ pre: " <b> 1.8. </b> "
 
 **Week 8 Objectives:**
 
-- Tìm hiểu AWS Amplify Hosting và bắt đầu xây dựng giao diện web cho hệ thống giám sát.
-- Xây dựng trang đăng nhập và upload ảnh tích hợp với Cognito và S3.
+- Learn about AWS Amplify Hosting and begin building the web interface for the monitoring system.
+- Build a login page and image upload feature integrated with Cognito and S3.
 
 **Tasks completed this week:**
 
-| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
-|-----|-----------|--------------|-----------------|----------------|
-| 2 | Tìm hiểu AWS Amplify Hosting: CI/CD pipeline, custom domain, build settings. So sánh Amplify Hosting với S3 Static Website Hosting. | 22/06/2026 | 22/06/2026 | https://docs.aws.amazon.com/amplify/ |
-| 3 | Tìm hiểu Amplify UI Components cho React/Next.js: Authenticator component tích hợp Cognito, Storage component upload ảnh lên S3. | 23/06/2026 | 23/06/2026 | https://ui.docs.amplify.aws/ |
-| 4 | Thực hành tạo ứng dụng web Next.js cơ bản. Tích hợp Amplify với Cognito User Pool. Xây dựng trang đăng nhập/đăng xuất. | 24/06/2026 | 24/06/2026 | https://cloudjourney.awsstudygroup.com/vi/ |
-| 5 | Xây dựng trang upload ảnh: Gọi API lấy S3 presigned URL, upload ảnh trực tiếp lên S3 từ frontend, hiển thị trạng thái upload. | 25/06/2026 | 25/06/2026 | https://docs.amplify.aws/ |
-| 6 | Kiểm thử toàn bộ luồng upload: Đăng nhập qua Cognito → Lấy presigned URL → Upload ảnh → SQS → Lambda xử lý. | 26/06/2026 | 26/06/2026 | |
+| Day | Task | Start Date | Completion Date | Reference |
+|-----|------|------------|-----------------|-----------|
+| Mon | Study AWS Amplify Hosting: CI/CD pipeline, custom domain, build settings. Compare Amplify Hosting with S3 Static Website Hosting. | 22/06/2026 | 22/06/2026 | https://docs.aws.amazon.com/amplify/ |
+| Tue | Study Amplify UI Components for React/Next.js: Authenticator component integrated with Cognito, Storage component for uploading images to S3. | 23/06/2026 | 23/06/2026 | https://ui.docs.amplify.aws/ |
+| Wed | Practice creating a basic Next.js web application. Integrate Amplify with the Cognito User Pool. Build a login/logout page. | 24/06/2026 | 24/06/2026 | https://cloudjourney.awsstudygroup.com/vi/ |
+| Thu | Build the image upload page: Call the API to get an S3 presigned URL, upload the image directly to S3 from the frontend, display the upload status. | 25/06/2026 | 25/06/2026 | https://docs.amplify.aws/ |
+| Fri | Test the complete upload flow: Log in via Cognito → Get presigned URL → Upload image → SQS → Lambda processing. | 26/06/2026 | 26/06/2026 | |
 
 **Week 8 Results:**
 
-- Hiểu AWS Amplify Hosting và CI/CD pipeline cho frontend web application.
-- Xây dựng thành công ứng dụng Next.js với tích hợp Cognito (đăng nhập/đăng xuất).
-- Triển khai thành công trang upload ảnh sử dụng S3 presigned URL.
-- Kiểm thử thành công luồng đầy đủ từ giao diện người dùng đến AI phân tích.
+- Understood AWS Amplify Hosting and its CI/CD pipeline for frontend web applications.
+- Successfully built a Next.js application with Cognito integration (login/logout).
+- Successfully deployed an image upload page using S3 presigned URLs.
+- Successfully tested the complete flow from the user interface all the way to AI analysis.

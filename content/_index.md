@@ -18,7 +18,7 @@ chapter: false
 
 &emsp; **Major:** Information Technology
 
-&emsp; **Class:**
+&emsp; **Class:** AWS052026
 
 &emsp; **Internship Company:** Amazon Web Services Viet Nam Company Limited
 

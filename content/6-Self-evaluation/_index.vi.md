@@ -16,12 +16,12 @@ Tôi đã tham gia xây dựng hệ thống Giải pháp tự động hóa giám
 
 | STT | Tiêu chí | Mô tả | Tốt | Khá | TB |
 |-----|---------|-------|-----|-----|-----|
-| 1 | Kiến thức & kỹ năng chuyên môn | Hiểu biết về ngành, áp dụng kiến thức vào thực tế | X | | |
+| 1 | Kiến thức & kỹ năng chuyên môn | Hiểu biết về ngành, áp dụng kiến thức vào thực tế | | X | |
 | 2 | Khả năng học hỏi | Tiếp thu kiến thức mới, học hỏi nhanh | | X | |
 | 3 | Chủ động | Tự tìm hiểu, nhận nhiệm vụ mà không chờ chỉ dẫn | X | | |
 | 4 | Tinh thần trách nhiệm | Hoàn thành công việc đúng hạn, đảm bảo chất lượng | X | | |
-| 5 | Kỷ luật | Tuân thủ giờ giấc, nội quy, quy trình làm việc | | | X |
-| 6 | Tính cầu tiến | Sẵn sàng nhận feedback và cải thiện bản thân | | X | |
+| 5 | Kỷ luật | Tuân thủ giờ giấc, nội quy, quy trình làm việc | | X | |
+| 6 | Tính cầu tiến | Sẵn sàng nhận feedback và cải thiện bản thân | X |  | |
 | 7 | Giao tiếp | Trình bày ý tưởng, báo cáo công việc rõ ràng | | X | |
 | 8 | Hợp tác nhóm | Làm việc hiệu quả với đồng nghiệp | X | | |
 | 9 | Ứng xử chuyên nghiệp | Tôn trọng đồng nghiệp, môi trường làm việc | X | | |

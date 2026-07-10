@@ -10,22 +10,21 @@ pre: " <b> 7. </b> "
 
 Trong phần này, sinh viên tự do đóng góp ý kiến cá nhân về những trải nghiệm khi tham gia chương trình First Cloud AI Journey, giúp team FCAJ cải thiện những vấn đề còn thiếu sót.
 
+<div style="text-align: left;">
+
 ## 1. Đánh giá chung
 
-**Môi trường làm việc:**
-Môi trường làm việc rất thân thiện và cởi mở. Các thành viên trong FCAJ luôn sẵn sàng hỗ trợ khi mình gặp khó khăn, kể cả ngoài giờ làm việc. Không gian làm việc gọn gàng, thoải mái, giúp mình tập trung tốt hơn.
+- **Môi trường làm việc:** Môi trường làm việc rất thân thiện và cởi mở. Các thành viên trong FCAJ luôn sẵn sàng hỗ trợ khi mình gặp khó khăn, kể cả ngoài giờ làm việc. Không gian làm việc gọn gàng, thoải mái, giúp mình tập trung tốt hơn.
 
-**Sự hỗ trợ của mentor / team admin:**
-Mentor hướng dẫn rất chi tiết, giải thích rõ ràng khi mình chưa hiểu và luôn khuyến khích mình đặt câu hỏi. Mình đánh giá cao việc mentor cho phép mình thử và tự xử lý vấn đề thay vì chỉ đưa đáp án.
+- **Sự hỗ trợ của mentor / team admin:** Mentor hướng dẫn rất chi tiết, giải thích rõ ràng khi mình chưa hiểu và luôn khuyến khích mình đặt câu hỏi. Mình đánh giá cao việc mentor cho phép mình thử và tự xử lý vấn đề thay vì chỉ đưa đáp án.
 
-**Sự phù hợp giữa công việc và chuyên ngành học:**
-Công việc mình được giao phù hợp với kiến thức Công nghệ phần mềm đã học ở trường, đồng thời mở rộng thêm những mảng mới như thiết kế kiến trúc cloud, AI/ML và DevOps trên AWS.
+- **Sự phù hợp giữa công việc và chuyên ngành học:** Công việc mình được giao phù hợp với kiến thức Công nghệ phần mềm đã học ở trường, đồng thời mở rộng thêm những mảng mới như thiết kế kiến trúc cloud, AI/ML và DevOps trên AWS.
 
-**Cơ hội học hỏi & phát triển kỹ năng:**
-Trong quá trình thực tập, mình học được nhiều kỹ năng mới: thiết kế hệ thống Serverless, sử dụng AI/ML của AWS, viết blog kỹ thuật và tham gia workshop thực hành. Mentor chia sẻ nhiều kinh nghiệm thực tế giúp mình định hướng tốt hơn.
+- **Cơ hội học hỏi & phát triển kỹ năng:** Trong quá trình thực tập, mình học được nhiều kỹ năng mới: thiết kế hệ thống Serverless, sử dụng AI/ML của AWS, viết blog kỹ thuật và tham gia workshop thực hành. Mentor chia sẻ nhiều kinh nghiệm thực tế giúp mình định hướng tốt hơn.
 
-**Văn hóa & tinh thần đồng đội:**
-Văn hóa FCAJ rất tích cực: mọi người tôn trọng lẫn nhau, làm việc nghiêm túc nhưng vẫn vui vẻ. Điều này giúp mình cảm thấy mình là một phần của tập thể, dù chỉ là thực tập sinh.
+- **Văn hóa & tinh thần đồng đội:** Văn hóa FCAJ rất tích cực: mọi người tôn trọng lẫn nhau, làm việc nghiêm túc nhưng vẫn vui vẻ. Điều này giúp mình cảm thấy mình là một phần của tập thể, dù chỉ là thực tập sinh.
+
+</div>
 
 ## 2. Một số câu hỏi khác
 

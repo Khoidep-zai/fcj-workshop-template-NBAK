@@ -27,9 +27,9 @@ pre: ""
 
 **Chuyên ngành:** Công nghệ thông tin
 
-**Lớp:**
+**Lớp:** AWS052026
 
-**Công ty thực tập:** Amazon Web Services Vietnam Company Limited
+**Công ty thực tập:** Công ty TNHH Amazon Web Services Viet Nam
 
 **Vị trí thực tập:** Workforce Bootcamp - First Cloud AI Journey
 

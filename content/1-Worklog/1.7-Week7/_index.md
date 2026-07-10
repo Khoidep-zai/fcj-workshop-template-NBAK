@@ -10,22 +10,22 @@ pre: " <b> 1.7. </b> "
 
 **Week 7 Objectives:**
 
-- Tìm hiểu Amazon Cognito và thiết kế phân quyền truy cập cho nhân viên Logistics.
-- Tích hợp Cognito Authorizer vào API Gateway để bảo vệ API.
+- Learn about Amazon Cognito and design access control for Logistics staff.
+- Integrate a Cognito Authorizer into API Gateway to protect the API.
 
 **Tasks completed this week:**
 
-| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
-|-----|-----------|--------------|-----------------|----------------|
-| 2 | Tìm hiểu Amazon Cognito User Pool và Identity Pool. So sánh các phương án xác thực: Cognito, IAM User, bên thứ ba. | 15/06/2026 | 15/06/2026 | https://docs.aws.amazon.com/cognito/ |
-| 3 | Tìm hiểu cách kết hợp IAM Role với Cognito Identity Pool. Tìm hiểu Cognito Authorizer trên Amazon API Gateway và JWT Token. | 16/06/2026 | 16/06/2026 | https://docs.aws.amazon.com/cognito/ |
-| 4 | Thực hành tạo Cognito User Pool cho hệ thống giám sát hàng hóa. Thực hành tạo App Client và cấu hình thuộc tính người dùng. | 17/06/2026 | 17/06/2026 | https://cloudjourney.awsstudygroup.com/vi/ |
-| 5 | Thực hành tích hợp Cognito Authorizer vào API Gateway. Kiểm thử gọi API có yêu cầu xác thực bằng token Cognito. | 18/06/2026 | 18/06/2026 | https://docs.aws.amazon.com/cognito/ |
-| 6 | Rà soát toàn bộ IAM Policy theo nguyên tắc Least Privilege. Đảm bảo mỗi Lambda function chỉ có đúng quyền cần thiết. | 19/06/2026 | 19/06/2026 | |
+| Day | Task | Start Date | Completion Date | Reference |
+|-----|------|------------|-----------------|-----------|
+| Mon | Study Amazon Cognito User Pool and Identity Pool. Compare authentication options: Cognito, IAM User, and third-party providers. | 15/06/2026 | 15/06/2026 | https://docs.aws.amazon.com/cognito/ |
+| Tue | Learn how to combine IAM Roles with Cognito Identity Pool. Study the Cognito Authorizer on Amazon API Gateway and JWT Tokens. | 16/06/2026 | 16/06/2026 | https://docs.aws.amazon.com/cognito/ |
+| Wed | Practice creating a Cognito User Pool for the cargo monitoring system. Create an App Client and configure user attributes. | 17/06/2026 | 17/06/2026 | https://cloudjourney.awsstudygroup.com/vi/ |
+| Thu | Practice integrating the Cognito Authorizer into API Gateway. Test calling the API with authentication using a Cognito token. | 18/06/2026 | 18/06/2026 | https://docs.aws.amazon.com/cognito/ |
+| Fri | Review all IAM Policies against the Least Privilege principle. Ensure each Lambda function has only the exact permissions it requires. | 19/06/2026 | 19/06/2026 | |
 
 **Week 7 Results:**
 
-- Hiểu sự khác biệt giữa Cognito User Pool và Identity Pool và cách kết hợp với IAM Role.
-- Tạo và cấu hình thành công Cognito User Pool cho hệ thống giám sát hàng hóa.
-- Tích hợp thành công Cognito Authorizer vào API Gateway, đảm bảo chỉ người dùng đã xác thực mới gọi được API.
-- Rà soát và tối ưu toàn bộ IAM Policy theo nguyên tắc Least Privilege.
+- Understood the differences between Cognito User Pool and Identity Pool and how to combine them with IAM Roles.
+- Successfully created and configured a Cognito User Pool for the cargo monitoring system.
+- Successfully integrated the Cognito Authorizer into API Gateway, ensuring only authenticated users can call the API.
+- Reviewed and optimized all IAM Policies to comply with the Least Privilege principle.

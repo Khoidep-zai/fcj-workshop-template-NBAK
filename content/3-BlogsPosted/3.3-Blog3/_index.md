@@ -8,4 +8,4 @@ pre: " <b> 3.3. </b> "
 
 ## Blog 3
 
-*(Mục này hiện chưa có dữ liệu phù hợp, sẽ được bổ sung sau theo kế hoạch thực tập)*
+*(This section currently does not have corresponding content and will be updated later according to the internship schedule)*

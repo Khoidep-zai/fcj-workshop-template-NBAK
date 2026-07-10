@@ -6,67 +6,67 @@ chapter: false
 pre: " <b> 3.1. </b> "
 ---
 
-# SAMSUNG XỬ LÝ BÀI TOÁN "GIÁ BỊ LỆCH" NHỜ AWS LAMBDA RESPONSE STREAMING
+# HOW SAMSUNG ACHIEVED REAL-TIME PRICING WITH AWS LAMBDA RESPONSE STREAMING
 
-Khi vận hành hệ thống E-commerce ở quy mô lớn, một trong những bài toán khó nhất là tính toán và hiển thị giá theo thời gian thực (real-time pricing) cho từng người dùng mà không làm chậm tốc độ tải trang. Samsung đã ứng dụng **AWS Lambda Response Streaming** để giải quyết triệt để vấn đề độ trễ này cho hệ thống e-commerce toàn cầu của họ.
+Operating a large-scale E-commerce platform comes with one of the toughest challenges: calculating and displaying real-time pricing for each user without degrading page loading speed. Samsung leveraged **AWS Lambda Response Streaming** to completely resolve this latency challenge for their global e-commerce system.
 
-### Vấn đề: giá hiển thị và giá thanh toán không khớp nhau
+### The Problem: Discrepancies Between Displayed Prices and Checkout Prices
 
-* Samsung.com bán nhiều loại sản phẩm với vô số biến thể (phiên bản, khuyến mãi, khu vực), khiến việc tính giá trở nên phức tạp
-* Cách làm cũ: dùng cron job chạy mỗi giờ để tính trước giá cho mọi tổ hợp sản phẩm rồi lưu vào cache
-* Hai hệ quả tiêu cực của cách làm cũ:
-  * **Bùng nổ tổ hợp**: số bản ghi cần tính trước tăng vọt dù phần lớn không ai xem tới, gây lãng phí tài nguyên
-  * **Độ trễ đồng bộ**: giá cache không cập nhật kịp khi có flash sale, dẫn đến hiện tượng giá lệch giữa lúc xem sản phẩm và lúc thanh toán ("cart shock"), ảnh hưởng đến lòng tin khách hàng
-* Gốc rễ vấn đề: bất kỳ lớp cache trung gian nào cũng sẽ dần lệch khỏi dữ liệu gốc theo thời gian
+* Samsung.com sells a vast range of products with countless combinations (variants, promotions, regional pricing), making price calculation highly complex.
+* Previous approach: Used hourly cron jobs to precompute prices for all product combinations and stored them in cache layers.
+* Two major drawbacks of the legacy approach:
+  * **Combination Explosion**: The number of precomputed records surged drastically even though most combinations were rarely viewed, wasting significant storage and compute resources.
+  * **Synchronization Latency**: Cached prices failed to update immediately during flash sales, causing price discrepancies between browsing and checkout ("cart shock") and eroding customer trust.
+* Root cause: Any intermediate caching layer will eventually drift from the authoritative source of truth over time.
 
-### Hướng đi mới: bỏ cache trung gian, truy vấn trực tiếp nguồn dữ liệu
+### A New Approach: Eliminate Intermediate Caching and Query the Data Source Directly
 
-* Samsung xây dựng **Bulk Arbitration Engine** - một lớp điều phối không lưu trạng thái (stateless), truy vấn trực tiếp Pricing Engine theo thời gian thực thay vì tra cache cũ
-* Luồng hoạt động:
-  1. Trình duyệt gửi một request duy nhất yêu cầu giá cho khoảng 30 SKU
-  2. Một hàm AWS Lambda tách request thành 30 lệnh gọi song song tới Pricing Engine
-  3. Kết quả trả về tới đâu, Lambda **stream** ngay dữ liệu đó về trình duyệt tới đó, không cần chờ đủ 30 kết quả
-* Công nghệ cốt lõi: **AWS Lambda Response Streaming** kết hợp **Amazon CloudFront** trỏ thẳng vào Lambda, cache những gì cache được ngay ở tầng edge gần người dùng nhất
-* Lưu ý: kiến trúc thực tế không đi qua Amazon API Gateway - CloudFront trỏ thẳng tới Lambda làm origin
+* Samsung built a **Bulk Arbitration Engine** — a stateless orchestration layer that queries the Pricing Engine directly in real time instead of checking stale caches.
+* Operational workflow:
+  1. The browser sends a single request asking for pricing data on approximately 30 SKUs.
+  2. An AWS Lambda function splits the request into 30 parallel calls to the authoritative Pricing Engine.
+  3. As each SKU result returns, Lambda immediately **streams** that data back to the browser without waiting for all 30 calls to finish.
+* Core technology: **AWS Lambda Response Streaming** combined with **Amazon CloudFront** pointing directly to Lambda, caching static elements at edge locations closest to end users.
+* Note: The production architecture bypasses Amazon API Gateway — CloudFront connects directly to Lambda as an origin.
 
-### Giải pháp kỹ thuật: trả dữ liệu theo luồng thay vì "all-or-nothing"
+### Technical Solution: Stream Data Instead of "All-or-Nothing" Responses
 
-* Hàm Lambda được bọc bằng `awslambda.streamifyResponse()`, cho phép đẩy dữ liệu ra ngay khi có kết quả thay vì đợi xử lý xong toàn bộ
-* 30 lệnh gọi tới Pricing Engine chạy song song; mỗi khi có giá của một SKU, dữ liệu được ghi ngay vào response dưới dạng **NDJSON** (mỗi dòng một object JSON)
-* Dữ liệu được nén **GZIP ở mức ưu tiên tốc độ (Z_BEST_SPEED)** trước khi gửi, giúp giảm dung lượng đáng kể mà không tốn thêm thời gian xử lý
-* Nhờ đó, chỉ số **Time to First Byte (TTFB)** giảm mạnh, người dùng thấy giá xuất hiện gần như tức thì
+* The Lambda handler is wrapped with `awslambda.streamifyResponse()`, enabling it to flush data chunks immediately upon availability rather than buffering the entire payload.
+* 30 parallel requests are sent to the Pricing Engine; as soon as an SKU's price arrives, it is written immediately into the response stream formatted as **NDJSON** (Newline Delimited JSON, one JSON object per line).
+* Data is compressed using **GZIP at maximum speed priority (Z_BEST_SPEED)** before transmission, significantly reducing bandwidth footprint with negligible CPU overhead.
+* Consequently, **Time to First Byte (TTFB)** dropped sharply, allowing end users to see prices appear almost instantly.
 
-### Một số kỹ thuật triển khai đáng chú ý
+### Notable Implementation Techniques
 
-* **Nén request vào GET thay vì dùng POST**: mã hóa toàn bộ 30 SKU và thông tin liên quan thành một chuỗi query gọn (dưới 800 ký tự) để nhét vào URL của GET request, nhờ đó CloudFront có thể cache được (POST thì CDN không cache)
-* **Định dạng NDJSON**: giúp trình duyệt xử lý và hiển thị giá ngay khi từng dòng dữ liệu về tới, không cần chờ toàn bộ phản hồi
-* **Nén GZIP ưu tiên tốc độ**: giúp giảm khoảng 76% kích thước phản hồi (từ 170KB xuống 40KB) mà vẫn đảm bảo tốc độ xử lý
-* **Chịu lỗi từng phần (partial failure)**: nếu một trong 30 sản phẩm bị lỗi khi lấy giá, hệ thống chỉ báo lỗi cho riêng sản phẩm đó, các sản phẩm còn lại vẫn hiển thị bình thường
-* **Giới hạn 30 sản phẩm/lần gọi**: cân bằng giữa thời gian xử lý của Lambda (tránh timeout) và số lượng request chạy song song
+* **Packing Requests into GET Instead of POST**: All 30 SKUs and metadata are encoded into a concise query string (under 800 characters) inside a GET request URL, enabling CloudFront caching (CDN edge servers generally do not cache POST requests).
+* **NDJSON Format**: Allows the browser to parse and render pricing data line by line as it arrives, without waiting for the entire HTTP response body to close.
+* **Speed-Optimized GZIP Compression**: Reduces response payload size by ~76% (from 170 KB down to 40 KB) while preserving low latency.
+* **Partial Failure Handling**: If an error occurs while fetching the price for 1 out of 30 items, the system reports an error specifically for that SKU while the remaining 29 items display normally.
+* **Batch Size Limit of 30 Products**: Balances Lambda execution duration (preventing timeouts) against downstream concurrency limits.
 
-### Kết quả tối ưu qua 4 giai đoạn (load test với K6, mô phỏng 500 người dùng đồng thời)
+### Optimization Results Across 4 Phases (Load Testing with K6, 500 Concurrent Users)
 
-| Giai đoạn | Thay đổi kỹ thuật | Độ trễ P90 |
+| Phase | Technical Improvements | P90 Latency |
 |---|---|---|
-| 1 - Ban đầu | Kết nối qua VPN chung, Lambda buffer toàn bộ phản hồi, chưa nén | 4.500 ms |
-| 2 | Lambda trong VPC riêng + Provisioned Concurrency | 1.000 ms |
-| 3 | Bật HTTP/2 + nén GZIP | 218 ms |
-| 4 - Production | Thêm cache ở CloudFront, 95% traffic phục vụ tại edge | **50 ms** |
+| 1 - Baseline | Shared VPN connection, Lambda buffered entire payload, uncompressed | 4,500 ms |
+| 2 | Lambda inside dedicated VPC + Provisioned Concurrency | 1,000 ms |
+| 3 | Enabled HTTP/2 + GZIP compression | 218 ms |
+| 4 - Production | Added CloudFront caching, 95% of traffic served at edge | **50 ms** |
 
-* Trung bình cứ 20 request thì chỉ 1 request thực sự "chạm" tới Lambda, 19 request còn lại được phục vụ ngay tại edge của CloudFront
-* Số lượng máy chủ cần duy trì giảm từ hơn 100 máy (auto-scale mùa cao điểm) xuống chỉ còn 5-10 hàm Lambda, giảm đáng kể chi phí và gánh nặng vận hành
+* On average, only 1 out of every 20 requests actually invokes Lambda; the remaining 19 requests are served directly from CloudFront edge caches.
+* The number of origin servers required dropped from over 100 auto-scaled instances during peak traffic down to just 5–10 Lambda functions, drastically lowering infrastructure costs and operational overhead.
 
-### Bài học rút ra
+### Key Takeaways
 
-* Thay vì cố làm cache "thông minh hơn", đôi khi giải pháp đúng là **bỏ hẳn cache trung gian** và tối ưu đường truyền trực tiếp tới nguồn dữ liệu
-* Cache luôn đi kèm đánh đổi giữa tốc độ và độ chính xác - với dữ liệu biến động liên tục như giá bán, độ chính xác quan trọng hơn
-* Tư duy **streaming** (trả kết quả ngay khi có, không đợi xử lý xong toàn bộ) là cách tiếp cận có thể áp dụng cho nhiều bài toán khác cần tổng hợp dữ liệu từ nhiều nguồn trong thời gian thực: danh mục sản phẩm, tồn kho, hệ thống gợi ý...
+* Instead of attempting to build "smarter caches," the right architectural decision is sometimes to **eliminate intermediate caching entirely** and optimize the direct pathway to the authoritative data source.
+* Caching always entails a trade-off between speed and accuracy — for highly dynamic data such as pricing, accuracy takes priority.
+* A **streaming** mindset (delivering partial results immediately rather than waiting for completion) can be applied to many real-time aggregation workloads: product catalogs, inventory levels, recommendation engines, and more.
 
-### Hình ảnh minh họa kiến trúc
+### Architecture Diagram
 
-![Kiến trúc Real-time Pricing của Samsung trên AWS Lambda Response Streaming](/images/Samsung_AWS.jpg)
+![Samsung Real-Time Pricing Architecture with AWS Lambda Response Streaming](/images/Samsung_AWS.jpg)
 
-### Nguồn tham khảo & Bài viết đã đăng
+### References & Published Posts
 
-- **Bài đăng trên cộng đồng AWS Study Group FCJ:** [Xem bài viết trên Facebook](https://www.facebook.com/groups/awsstudygroupfcj/permalink/2206091146822512/)
-- **Bài viết gốc từ AWS Architecture Blog:** [How Samsung achieved real-time pricing with AWS Lambda Response Streaming](https://aws.amazon.com/blogs/architecture/how-samsung-achieved-real-time-pricing-with-aws-lambda-response-streaming/)
+- **Post on AWS Study Group FCJ Community:** [View post on Facebook](https://www.facebook.com/groups/awsstudygroupfcj/permalink/2206091146822512/)
+- **Original AWS Architecture Blog Post:** [How Samsung achieved real-time pricing with AWS Lambda Response Streaming](https://aws.amazon.com/blogs/architecture/how-samsung-achieved-real-time-pricing-with-aws-lambda-response-streaming/)

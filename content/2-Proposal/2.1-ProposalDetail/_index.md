@@ -1,225 +1,225 @@
 ---
-title: "Chi tiết đề xuất"
+title: "Proposal Detail"
 date: 2026-07-24
 weight: 1
 chapter: false
 pre: " <b> 2.1. </b> "
 ---
 
-# Giải pháp tự động hóa giám sát chất lượng hàng hóa dựa trên Serverless và AI/ML
+# Automated Cargo Quality Monitoring Solution Based on Serverless and AI/ML
 
-### Tóm tắt điều hành
+### Executive Summary
 
-Trong lĩnh vực Logistics, doanh nghiệp đang chịu áp lực lớn về thời gian xử lý, độ chính xác dữ liệu và khả năng kiểm soát tổn thất hàng hóa. Việc giám sát chất lượng hàng hóa tại kho hiện nay phần lớn vẫn phụ thuộc vào con người, dẫn đến tình trạng xử lý sự cố chậm, dữ liệu bị phân tán và khó cập nhật theo thời gian thực.
+In the logistics industry, enterprises face heavy pressures regarding processing speed, data accuracy, and loss control. Currently, cargo quality monitoring in warehouses heavily depends on manual human inspection, leading to slow incident response, fragmented data, and an inability to track updates in real time.
 
-Nhóm đề xuất xây dựng hệ thống **"Giải pháp tự động hóa giám sát chất lượng hàng hóa dựa trên kiến trúc Serverless và Trí tuệ nhân tạo (AI/ML)"**. Đây là một hệ thống phần mềm ứng dụng các dịch vụ của Amazon Web Services (AWS), cho phép nhân viên giao hàng hoặc khách hàng chụp ảnh kiện hàng gặp sự cố như rách, vỡ, móp méo hoặc hư hỏng, sau đó tải trực tiếp hình ảnh lên hệ thống để được phân tích tự động.
+We propose developing the **"Automated Cargo Quality Monitoring Solution Based on Serverless Architecture and Artificial Intelligence (AI/ML)"**. This software application utilizes Amazon Web Services (AWS) to allow delivery personnel or customers to take photos of damaged parcels (torn, broken, dented, or deformed) and upload them directly to the system for automated analysis.
 
-Hệ thống sử dụng AI/ML để nhận diện mức độ hư hại của hàng hóa, trích xuất thông tin vận đơn, lưu trữ bằng chứng và gửi cảnh báo cho bộ phận liên quan. Nhờ đó, quy trình xử lý sự cố có thể được rút ngắn từ vài giờ hoặc vài ngày xuống còn vài giây, đồng thời giúp doanh nghiệp giảm chi phí vận hành, hạn chế sai sót thủ công và nâng cao chất lượng dịch vụ.
-
----
-
-### Tuyên bố vấn đề
-
-#### Vấn đề hiện tại
-
-Theo khảo sát thực tế, việc ghi nhận và xử lý hàng hóa hư hỏng hiện nay đang gặp nhiều điểm lỗi trong quy trình vận hành:
-
-- **Quy trình thủ công, tốn thời gian và dễ sai sót:** Khi phát hiện hàng hóa bị hư hỏng, nhân viên thường phải tự chụp ảnh bằng điện thoại cá nhân, gửi qua nhóm chat hoặc lập tờ trình giấy. Bộ phận thẩm định sau đó phải tổng hợp các thông tin rời rạc này để nhập lại vào hệ thống ERP và xử lý thủ tục bồi hoàn cho khách hàng. Quy trình này mất nhiều thời gian và dễ gây nhầm lẫn dữ liệu.
-
-- **Thiếu khả năng tự động hóa và cảnh báo tức thời:** Do chưa có phần mềm tự động phân tích hình ảnh và đọc thông tin đơn hàng, quản lý kho thường không biết ngay mức độ hư hỏng của hàng hóa để đưa ra quyết định xử lý kịp thời. Việc phản hồi chậm làm ảnh hưởng đến trải nghiệm khách hàng và uy tín dịch vụ.
-
-- **Thiếu khả năng mở rộng hệ thống:** Vào mùa cao điểm, số lượng hàng hóa đổ về kho tăng mạnh. Quy trình kiểm tra thủ công không thể xử lý song song nhiều đơn hàng cùng lúc, dẫn đến quá tải, bỏ sót hàng hóa hư hỏng hoặc để sản phẩm lỗi tiếp tục đi đến tay người tiêu dùng.
-
-- **Dữ liệu lưu trữ phân mảnh, khó truy xuất:** Hồ sơ sự cố hiện có thể nằm rải rác trong sổ tay, file Excel hoặc các nhóm chat. Khi cần thống kê tỷ lệ tổn thất theo tháng/quý để báo cáo cho ban giám đốc, nhân viên phải rà soát thủ công, mất thời gian và dễ sai lệch.
-
-- **Chi phí vận hành cao:** Doanh nghiệp phải duy trì nhân sự chuyên trách tại từng điểm kho để kiểm tra, nhập liệu và xử lý sự cố. Bên cạnh chi phí nhân công, các sai sót thông tin và tranh chấp đền bù kéo dài cũng làm suy giảm lợi nhuận và uy tín của doanh nghiệp Logistics.
+The system employs AI/ML to detect damage levels, extract shipping label information, store visual proof, and send alerts to relevant departments. Consequently, incident processing times are reduced from hours or days to mere seconds, while lowering operational costs, minimizing manual errors, and improving overall service quality.
 
 ---
 
-### Giải pháp đề xuất
+### Problem Statement
 
-Nhóm đề xuất xây dựng hệ thống tự động hóa quy trình giám sát chất lượng hàng hóa dựa trên kiến trúc Serverless và AI/ML. Hệ thống tập trung vào các khả năng cốt lõi sau:
+#### Current Challenges
 
-- **Tự động hóa bằng AI thông minh:** Hệ thống sử dụng Amazon Rekognition để phân tích hình ảnh hàng hóa và nhận diện dấu hiệu hư hỏng. Kết quả phân tích có thể bao gồm nhãn trạng thái, mức độ hư hại và điểm tin cậy. Amazon Textract được dùng để trích xuất mã vận đơn, địa chỉ hoặc các thông tin văn bản liên quan từ ảnh mà không cần nhập tay.
+According to field assessments, the current process of recording and handling damaged goods faces several operational bottlenecks:
 
-- **Xử lý bất đồng bộ theo thời gian thực:** Hình ảnh sau khi được tải lên Amazon S3 sẽ kích hoạt luồng xử lý tự động. Dữ liệu hình ảnh, mã vận đơn và kết quả phân tích được đồng bộ về Amazon DynamoDB để tra cứu, thống kê và xuất báo cáo. Cách xử lý này giúp rút ngắn thời gian ghi nhận và phản hồi từ vài ngày xuống còn vài giây.
+- **Manual, Time-Consuming, and Error-Prone Process:** When damaged cargo is detected, staff typically take photos using personal phones, send them via chat groups, or fill out paper reports. The verification department must then gather these scattered pieces of information to manually enter them into the ERP system and initiate compensation claims. This process is slow and prone to data confusion.
 
-- **Hạ tầng Serverless tự động co giãn:** Hệ thống chạy trên các dịch vụ Serverless của AWS, có thể tự động mở rộng khi số lượng ảnh tăng đột biến vào mùa cao điểm. Doanh nghiệp không cần quản lý máy chủ thủ công nhưng vẫn đảm bảo khả năng xử lý nhiều yêu cầu cùng lúc.
+- **Lack of Automation and Immediate Alerts:** Without automated image analysis and label extraction software, warehouse managers are not alerted immediately to damage severity, delaying critical operational decisions. Slow feedback loops degrade customer experience and service reputation.
 
-- **Quản lý tập trung và minh bạch dữ liệu:** Tất cả lịch sử quét, hình ảnh bằng chứng, mã vận đơn và trạng thái xử lý được lưu trữ tập trung. Người quản lý có thể tra cứu lịch sử bất kỳ lúc nào, kiểm tra bằng chứng và xuất báo cáo thống kê tình hình hàng hóa hư hỏng.
+- **Limited System Scalability:** Peak seasons experience a sharp surge in cargo volume. Manual inspection processes cannot handle numerous packages concurrently, resulting in bottlenecks, overlooked damaged items, or defective items being delivered to consumers.
 
-- **Tối ưu hóa chi phí vận hành:** Việc đưa AI vào quy trình giúp giảm sai sót so với nhập liệu thủ công, giảm nhu cầu nhân sự chuyên trách tại từng kho, rút ngắn thời gian giải quyết tranh chấp và nâng cao độ tin cậy trong xử lý bồi hoàn.
+- **Fragmented and Difficult-to-Access Storage:** Incident files are scattered across physical logbooks, Excel spreadsheets, and messaging groups. Compiling monthly/quarterly loss ratios for executive reports requires manual consolidation, which is inefficient and inaccurate.
+
+- **High Operational Costs:** Companies must maintain specialized personnel at warehouse checkpoints for inspection, manual data entry, and dispute handling. Along with labor costs, data entry errors and prolonged claims settlements erode logistics profit margins and reputation.
 
 ---
 
-### Kiến trúc giải pháp
+### Proposed Solution
 
-#### Kiến trúc tổng quan
-![Kiến trúc giải pháp Serverless và AI/ML](/images/DiagramStructure.png)
+We propose building an automated cargo quality monitoring solution leveraging Serverless architecture and AI/ML, focusing on these core capabilities:
 
-Hệ thống được thiết kế theo mô hình kiến trúc hướng sự kiện, sử dụng các dịch vụ AWS để tự động co giãn theo lưu lượng thực tế. Toàn bộ vòng đời của một yêu cầu giám sát chất lượng hàng hóa được chia thành 4 lớp công nghệ chính:
+- **Intelligent AI Automation:** The system uses Amazon Rekognition to analyze cargo images and identify damage signs. Analysis results include condition labels, damage severity, and confidence scores. Amazon Textract is utilized to automatically extract tracking numbers, addresses, and related text from shipping labels without manual entry.
 
-| Lớp kiến trúc | Vai trò | Dịch vụ AWS đề xuất |
+- **Real-Time Asynchronous Processing:** Uploading images to Amazon S3 triggers an automated processing pipeline. Visual data, tracking numbers, and analytical results are synchronized to Amazon DynamoDB for querying, auditing, and report generation. This reduces response cycles from days to seconds.
+
+- **Auto-Scaling Serverless Infrastructure:** Built entirely on AWS Serverless services, the system scales automatically during peak traffic without manual server management while maintaining high concurrency.
+
+- **Centralized and Transparent Data Management:** All scan histories, visual evidence, tracking numbers, and processing statuses are stored in a centralized repository. Managers can look up records anytime, verify evidence, and export damage statistical reports.
+
+- **Operational Cost Optimization:** Integrating AI reduces manual data entry errors, optimizes labor requirements at warehouses, shortens claim dispute resolution times, and improves reliability in compensation workflows.
+
+---
+
+### Solution Architecture
+
+#### High-Level Architecture
+![Serverless and AI/ML Solution Architecture](/images/DiagramStructure.png)
+
+The system adopts an event-driven architecture utilizing AWS services to scale automatically with actual traffic. The complete lifecycle of a cargo monitoring request is divided into four primary layers:
+
+| Architectural Layer | Role | Proposed AWS Services |
 | --- | --- | --- |
-| Frontend & Auth | Cung cấp giao diện web, quản lý đăng nhập/đăng ký, cấp JWT Token và kiểm soát quyền truy cập API | AWS Amplify, Amazon Cognito, Amazon API Gateway |
-| Storage | Tiếp nhận và lưu trữ ảnh hàng hóa hư hỏng do người dùng tải lên | Amazon S3 |
-| Backend & AI/ML | Xử lý sự kiện tải ảnh, phân tích hình ảnh, trích xuất thông tin vận đơn, đánh giá mức độ hư hại và cập nhật dữ liệu | Amazon SQS, AWS Lambda, Amazon Rekognition, Amazon Textract, Amazon DynamoDB |
-| Giám sát & Bảo mật | Theo dõi hoạt động hệ thống, quản lý log, phân quyền truy cập theo nguyên tắc least privilege | Amazon CloudWatch, AWS IAM |
+| Frontend & Auth | Provides the web interface, manages login/registration, issues JWT Tokens, and secures API access | AWS Amplify, Amazon Cognito, Amazon API Gateway |
+| Storage | Receives and stores damaged cargo images uploaded by users | Amazon S3 |
+| Backend & AI/ML | Processes upload events, analyzes images, extracts shipping details, evaluates damage severity, and updates databases | Amazon SQS, AWS Lambda, Amazon Rekognition, Amazon Textract, Amazon DynamoDB |
+| Monitoring & Security | Tracks system performance, manages logs, and enforces least privilege access control | Amazon CloudWatch, AWS IAM |
 
-#### Luồng xử lý chính
+#### Main Processing Flow
 
-| Bước | Mô tả |
+| Step | Description |
 | --- | --- |
-| 1 | Người dùng đăng nhập vào hệ thống thông qua giao diện web được triển khai bằng AWS Amplify và xác thực bằng Amazon Cognito. |
-| 2 | Người dùng tải ảnh kiện hàng bị hư hỏng lên hệ thống. Ảnh được lưu vào Amazon S3 Raw Image Bucket. |
-| 3 | S3 Event Notification phát sinh sự kiện sau khi ảnh được tải lên thành công và đưa thông tin xử lý vào Amazon SQS. |
-| 4 | Lambda orchestrator-function đọc sự kiện từ SQS, sau đó gọi Amazon Rekognition để phát hiện hư hỏng và Amazon Textract để đọc mã vận đơn/thông tin văn bản. |
-| 5 | Lambda evaluator-function đánh giá mức độ hư hại dựa trên kết quả AI/ML và xác định trạng thái xử lý. |
-| 6 | Lambda processor-function lưu kết quả vào Amazon DynamoDB, cập nhật trạng thái hồ sơ và kích hoạt cảnh báo nếu cần. |
-| 7 | Amazon SNS gửi thông báo Email/SMS cho quản lý kho hoặc bộ phận xử lý khi phát hiện sự cố nghiêm trọng. |
-| 8 | Amazon CloudWatch ghi nhận log, metrics và hỗ trợ theo dõi lỗi trong toàn bộ quá trình vận hành. |
+| 1 | Users log in via the web application hosted on AWS Amplify and authenticated by Amazon Cognito. |
+| 2 | Users upload photos of damaged cargo. Images are stored in the Amazon S3 Raw Image Bucket. |
+| 3 | S3 Event Notifications trigger upon successful upload and send processing records to Amazon SQS. |
+| 4 | The orchestrator Lambda function polls SQS events, invokes Amazon Rekognition to detect damage, and calls Amazon Textract to read tracking numbers/text. |
+| 5 | The evaluator Lambda function assesses damage severity based on AI/ML outputs and determines processing status. |
+| 6 | The processor Lambda function writes results to Amazon DynamoDB, updates record statuses, and triggers alerts if necessary. |
+| 7 | Amazon SNS sends Email/SMS notifications to warehouse managers or handling teams upon detecting critical damage. |
+| 8 | Amazon CloudWatch captures execution logs and metrics to monitor operational health. |
 
 ---
 
-### Các dịch vụ AWS sử dụng
+### AWS Services Utilized
 
 #### Frontend & Auth
 
-- **AWS Amplify:** Lưu trữ và phân phối giao diện web cho người dùng.
-- **Amazon Cognito:** Quản lý đăng nhập, đăng ký và cấp JWT Token.
-- **Amazon API Gateway:** Tiếp nhận API request, kiểm tra token và chuyển tiếp yêu cầu đến backend.
+- **AWS Amplify:** Hosts and delivers the frontend web application.
+- **Amazon Cognito:** Handles user authentication, registration, and JWT issuance.
+- **Amazon API Gateway:** Exposes API endpoints, validates authorization tokens, and proxies requests to the backend.
 
 #### Storage
 
-- **Amazon S3:** Lưu trữ ảnh gốc của hàng hóa, đóng vai trò điểm tiếp nhận dữ liệu đầu vào.
+- **Amazon S3:** Stores original cargo images as the primary data ingestion point.
 
 #### Backend Serverless & AI/ML
 
-- **Amazon SQS:** Làm hàng đợi trung gian, giúp hệ thống xử lý bất đồng bộ và tránh quá tải khi nhiều ảnh được tải lên cùng lúc.
-- **AWS Lambda orchestrator-function:** Đọc sự kiện từ SQS và điều phối các tác vụ phân tích AI/ML.
-- **Amazon Rekognition:** Phân tích hình ảnh để phát hiện dấu hiệu hư hỏng của kiện hàng.
-- **Amazon Textract:** Trích xuất văn bản, mã vận đơn hoặc thông tin giao hàng từ ảnh.
-- **AWS Lambda evaluator-function:** Đánh giá mức độ hư hại và phân loại trạng thái xử lý.
-- **AWS Lambda processor-function:** Lưu kết quả, cập nhật hồ sơ và kích hoạt các bước xử lý tiếp theo.
-- **Amazon DynamoDB:** Lưu trữ kết quả phân tích, lịch sử xử lý, trạng thái đơn hàng và dữ liệu phục vụ báo cáo.
-- **Amazon SNS:** Gửi cảnh báo Email/SMS cho bộ phận liên quan.
+- **Amazon SQS:** Acts as an asynchronous message buffer to decouple components and absorb burst traffic.
+- **AWS Lambda orchestrator-function:** Reads SQS events and coordinates AI/ML analysis tasks.
+- **Amazon Rekognition:** Analyzes images to detect cargo condition and damage signs.
+- **Amazon Textract:** Extracts printed text, shipping labels, and tracking numbers from images.
+- **AWS Lambda evaluator-function:** Evaluates damage severity and categorizes processing statuses.
+- **AWS Lambda processor-function:** Saves results, updates records, and triggers downstream actions.
+- **Amazon DynamoDB:** Stores scan results, processing history, package statuses, and reporting data.
+- **Amazon SNS:** Dispatches Email/SMS alerts to stakeholders.
 
-#### Giám sát & Bảo mật
+#### Monitoring & Security
 
-- **Amazon CloudWatch:** Theo dõi log, metrics, cảnh báo lỗi và hiệu năng của hệ thống.
-- **AWS IAM:** Quản lý quyền truy cập theo nguyên tắc least privilege, đảm bảo từng dịch vụ chỉ có quyền cần thiết để hoạt động.
+- **Amazon CloudWatch:** Monitors execution logs, system metrics, alarms, and performance.
+- **AWS IAM:** Enforces least privilege permissions across all AWS resources.
 
 ---
 
-### Đánh giá rủi ro
+### Risk Assessment
 
-| Rủi ro | Ảnh hưởng | Hướng xử lý |
+| Risk | Impact | Mitigation Strategy |
 | --- | --- | --- |
-| Chất lượng ảnh đầu vào kém | AI có thể nhận diện sai hoặc không trích xuất được mã vận đơn | Hướng dẫn người dùng chụp ảnh rõ nét, đủ sáng; kiểm tra định dạng và kích thước ảnh trước khi tải lên |
-| Kết quả AI/ML chưa chính xác trong một số trường hợp | Có thể phân loại sai mức độ hư hỏng | Cho phép người quản lý xác nhận thủ công với các trường hợp có điểm tin cậy thấp |
-| Lưu lượng tăng cao vào mùa cao điểm | Hệ thống có thể phát sinh độ trễ nếu không kiểm soát hàng đợi tốt | Sử dụng SQS để điều tiết tải, Lambda tự động co giãn và CloudWatch để giám sát backlog |
-| Rò rỉ dữ liệu hình ảnh hoặc thông tin vận đơn | Ảnh hưởng đến bảo mật dữ liệu khách hàng | Áp dụng Cognito, IAM least privilege, phân quyền truy cập S3 và mã hóa dữ liệu khi lưu trữ |
-| Chi phí tăng nếu xử lý số lượng ảnh quá lớn | Ảnh hưởng đến ngân sách vận hành | Theo dõi usage bằng CloudWatch, đặt cảnh báo chi phí và tối ưu kích thước ảnh trước khi phân tích |
+| Poor Input Image Quality | AI may misclassify or fail to extract tracking numbers | Provide guidelines for taking clear, well-lit photos; validate image format and size on the frontend before upload |
+| Ambiguous AI/ML Analysis Results | May misclassify damage severity levels | Allow manual verification by warehouse managers for cases with low confidence scores |
+| High Traffic Spikes During Peak Seasons | System latency could increase if queues backlog | Use SQS for traffic buffering, Lambda auto-scaling, and CloudWatch alarms to monitor queue depth |
+| Sensitive Data Leakage | Potential exposure of customer shipping information | Apply Cognito authentication, IAM least privilege, S3 bucket policies, and encryption at rest/in transit |
+| Excessive Processing Costs at High Volume | May impact operational cloud budget | Monitor usage via CloudWatch, set AWS Budgets alerts, and optimize image dimensions before inference |
 
 ---
 
-### Kết quả kỳ vọng
+### Expected Outcomes
 
-- Rút ngắn thời gian ghi nhận và xử lý sự cố hàng hóa từ vài giờ hoặc vài ngày xuống còn vài giây.
-- Tự động nhận diện dấu hiệu hư hỏng của hàng hóa bằng AI, giảm phụ thuộc vào kiểm tra thủ công.
-- Tự động trích xuất mã vận đơn và thông tin liên quan, hạn chế lỗi nhập liệu.
-- Tập trung hóa dữ liệu sự cố, hình ảnh bằng chứng và trạng thái xử lý trên một hệ thống duy nhất.
-- Hỗ trợ quản lý kho tra cứu lịch sử, thống kê tỷ lệ tổn thất và xuất báo cáo nhanh chóng.
-- Tăng khả năng mở rộng trong mùa cao điểm nhờ kiến trúc Serverless.
-- Giảm chi phí nhân sự vận hành, giảm tranh chấp đền bù và nâng cao uy tín dịch vụ Logistics.
-
----
-
-### Kết luận
-
-Giải pháp tự động hóa giám sát chất lượng hàng hóa dựa trên Serverless và AI/ML giúp doanh nghiệp Logistics chuyển đổi quy trình xử lý sự cố từ thủ công sang tự động, tập trung và có khả năng mở rộng. Việc kết hợp Amazon S3, SQS, Lambda, Rekognition, Textract, DynamoDB, SNS, CloudWatch và IAM tạo ra một kiến trúc phù hợp cho bài toán xử lý hình ảnh theo thời gian thực, đồng thời tối ưu chi phí vận hành và cải thiện chất lượng dịch vụ khách hàng.
+- Reduce incident recording and processing times from hours/days to seconds.
+- Automatically detect cargo damage via AI, minimizing reliance on manual visual inspection.
+- Automatically extract tracking numbers and shipping details, eliminating data entry errors.
+- Centralize incident records, visual proof, and processing statuses in a unified platform.
+- Enable warehouse managers to search histories, analyze loss statistics, and export reports efficiently.
+- Ensure high scalability during peak logistics seasons via Serverless architecture.
+- Optimize labor costs, shorten dispute resolutions, and enhance logistics service reputation.
 
 ---
 
-# Ước tính chi phí vận hành hệ thống trên AWS
+### Conclusion
 
-### Tóm tắt điều hành
-
-Tài liệu này ước tính chi phí AWS cho hệ thống phát hiện và xử lý hàng hóa hư hỏng trong kho vận, dựa trên kiến trúc serverless sử dụng Amplify, Cognito, API Gateway, S3, SQS, Lambda, Rekognition, Textract, DynamoDB, SNS, CloudWatch và IAM.
-
-Ước tính được xây dựng cho kịch bản thử nghiệm / vận hành thực tế trong 1 tuần, với khối lượng khoảng 245 ảnh/tuần và ~30 người dùng hoạt động. Trong phạm vi giả định này, tổng chi phí thực tế của tài khoản AWS mới vẫn là $0,00 do toàn bộ mức sử dụng nằm trong Free Tier tương ứng. Nếu tính theo đơn giá chuẩn mà không áp Free Tier, tổng chi phí 1 tuần vào khoảng $1,57 USD.
+The Automated Cargo Quality Monitoring Solution based on Serverless and AI/ML enables logistics enterprises to transition from manual, fragmented workflows to an automated, centralized, and highly scalable system. Combining Amazon S3, SQS, Lambda, Rekognition, Textract, DynamoDB, SNS, CloudWatch, and IAM creates an optimal architecture for real-time visual inspection while optimizing operational costs and elevating customer service quality.
 
 ---
 
-### 1. Tổng quan kiến trúc hệ thống
+# Operational Cost Estimation on AWS
 
-Hệ thống serverless trên AWS dùng để phát hiện và xử lý hàng hóa hư hỏng trong kho vận. Người dùng truy cập giao diện web được lưu trữ trên AWS Amplify, đăng nhập qua Amazon Cognito để nhận JWT token, sau đó gọi API qua Amazon API Gateway để tải ảnh hàng hóa lên Amazon S3.
+### Executive Summary
 
-Khi ảnh được tải lên, S3 phát sự kiện đẩy vào Amazon SQS để tránh quá tải khi nhiều ảnh được gửi cùng lúc. SQS kích hoạt chuỗi AWS Lambda gồm xử lý ảnh, gọi Amazon Rekognition để phát hiện hư hỏng, gọi Amazon Textract để đọc mã vận đơn hoặc địa chỉ trên nhãn hàng, sau đó ghi kết quả vào Amazon DynamoDB và gửi cảnh báo qua Amazon SNS khi độ tin cậy của AI dưới 80%.
+This document estimates the AWS operational costs for the Cargo Damage Detection and Processing System based on a serverless architecture utilizing Amplify, Cognito, API Gateway, S3, SQS, Lambda, Rekognition, Textract, DynamoDB, SNS, CloudWatch, and IAM.
 
-Toàn bộ hệ thống được giám sát bởi Amazon CloudWatch và áp dụng nguyên tắc least-privilege qua AWS IAM cho từng hàm Lambda. Báo cáo này ước tính chi phí AWS cho 12 dịch vụ xuất hiện trong bản vẽ, cho một tuần sử dụng.
-
----
-
-### 2. Giả định sử dụng làm cơ sở ước tính
-
-Các giả định dưới đây được dùng làm cơ sở tính toán:
-
-- Khối lượng ảnh xử lý: khoảng 35 ảnh/ngày x 7 ngày, tương đương 245 ảnh/tuần.
-- Người dùng hoạt động: khoảng 30 nhân viên/khách hàng đăng nhập và sử dụng web app trong tuần.
-- Tài khoản AWS: tài khoản mới, còn trong 12 tháng AWS Free Tier.
-- Vùng giá tham khảo: US East (N. Virginia).
+The estimation covers a 1-week testing/production pilot scenario involving ~245 processed images and ~30 active users. Under these assumptions, the actual out-of-pocket cost for a newly created AWS account is **$0.00 USD**, as all usage falls well within applicable AWS Free Tier limits. Calculated at standard On-Demand pricing without Free Tier benefits, the total weekly cost is approximately **$1.57 USD**.
 
 ---
 
-### 3. Bảng ước tính chi phí theo từng dịch vụ AWS (1 tuần)
+### 1. Architectural Overview
 
-| Dịch vụ AWS | Khối lượng sử dụng ước tính (1 tuần) | Đơn giá tham khảo (US East, N. Virginia) | Chi phí theo đơn giá chuẩn (chưa áp Free Tier) | Hạn mức AWS Free Tier áp dụng | Chi phí thực tế ước tính (tài khoản mới, đã áp Free Tier) |
+The serverless AWS solution detects and handles damaged parcels in warehouses. Users access the web app hosted on AWS Amplify, authenticate via Amazon Cognito to receive JWTs, and call REST APIs via Amazon API Gateway to upload images to Amazon S3.
+
+Upon upload, S3 publishes event notifications to Amazon SQS to buffer incoming load. SQS triggers an AWS Lambda pipeline that coordinates image processing, invokes Amazon Rekognition for damage detection, calls Amazon Textract to read shipping labels, stores structured records in Amazon DynamoDB, and dispatches Amazon SNS alerts when damage is detected with high confidence.
+
+The entire system is monitored by Amazon CloudWatch and secured with least-privilege IAM policies. This estimate covers 12 AWS services over a 1-week operational period.
+
+---
+
+### 2. Usage Assumptions
+
+The following baseline assumptions form the foundation of our calculation:
+
+- Processed image volume: ~35 images/day × 7 days = 245 images/week.
+- Active users: ~30 staff/customers accessing the web application.
+- AWS Account status: New account within the 12-month AWS Free Tier period.
+- Pricing Region: US East (N. Virginia).
+
+---
+
+### 3. Weekly Cost Estimation Breakdown by Service
+
+| AWS Service | Estimated Weekly Usage | Reference Unit Price (US East, N. Virginia) | Standard On-Demand Cost (No Free Tier) | Applicable AWS Free Tier Allowance | Actual Estimated Cost (New Account, Free Tier) |
 | --- | --- | --- | --- | --- | --- |
-| AWS Amplify (Hosting giao diện web) | ~5 lần build, ~0,5 GB lưu trên CDN, ~0,5 GB dữ liệu truyền cho ~30 người dùng | $0,01/phút build, $0,023/GB-tháng, $0,15/GB truyền dữ liệu | ≈ $0,23 | 1.000 phút build + 5 GB lưu trữ + 15 GB truyền dữ liệu/tháng (12 tháng đầu) | $0,00 |
-| Amazon Cognito (Xác thực đăng nhập) | ~30 người dùng hoạt động (MAU) | $0,015/MAU | ≈ $0,45 | 10.000 MAU/tháng | $0,00 |
-| Amazon API Gateway (REST API) | ~1.800 lượt gọi API | $3,50/1 triệu lượt gọi | ≈ $0,006 | 1.000.000 lượt gọi/tháng (12 tháng đầu) | $0,00 |
-| Amazon S3 (Raw Image Bucket) | 245 lượt PUT + 245 lượt GET, ~0,5 GB lưu trữ | $0,005/1.000 PUT, $0,0004/1.000 GET, $0,023/GB-tháng | ≈ $0,004 | 2.000 PUT + 20.000 GET + 5 GB lưu trữ/tháng | $0,00 |
-| Amazon SQS (Hàng đợi xử lý) | ~735 request | $0,40/1 triệu request | ≈ $0,0003 | 1.000.000 request/tháng | $0,00 |
-| AWS Lambda (3 hàm) | ~800 lượt gọi, ~800 GB-giây | $0,20/1 triệu lượt gọi + $0,0000166667/GB-giây | ≈ $0,013 | 1.000.000 lượt gọi + 400.000 GB-giây/tháng | $0,00 |
-| Amazon Rekognition (Phát hiện hư hỏng) | 245 ảnh xử lý | $0,001/ảnh | ≈ $0,245 | 5.000 ảnh/tháng (12 tháng đầu) | $0,00 |
-| Amazon Textract (Đọc vận đơn) | 245 trang | $0,0015/trang | ≈ $0,368 | 1.000 trang/tháng (3 tháng đầu) | $0,00 |
-| Amazon DynamoDB (Lưu log & lịch sử) | 245 lượt ghi + 300 lượt đọc | $0,625/1 triệu WRU, $0,125/1 triệu RRU | ≈ $0,0002 | 25 WCU/RCU + 25 GB lưu trữ/tháng | $0,00 |
-| Amazon SNS (Gửi cảnh báo Email/SMS) | ~25 email cảnh báo | $2,00/100.000 email đã gửi | ≈ $0,0005 | 1.000 email/tháng (12 tháng đầu) | $0,00 |
-| Amazon CloudWatch (Log, Metric, Alarm) | ~30 MB log, 3-5 metric, 3-5 alarm | $0,50/GB log, $0,30/metric-tháng, $0,10/alarm-tháng | ≈ $0,10 – $0,40 | 5 GB log + 10 metric + 10 alarm/tháng | $0,00 |
-| AWS IAM (Phân quyền least-privilege) | Không tính phí theo lượt sử dụng | Miễn phí | $0,00 | Luôn miễn phí | $0,00 |
+| AWS Amplify (Web Hosting) | ~5 builds, ~0.5 GB CDN storage, ~0.5 GB data transfer for ~30 users | $0.01/build min, $0.023/GB-month, $0.15/GB transfer | ≈ $0.23 | 1,000 build mins + 5 GB storage + 15 GB transfer/month (first 12 months) | $0.00 |
+| Amazon Cognito (Authentication) | ~30 Monthly Active Users (MAU) | $0.015/MAU | ≈ $0.45 | 10,000 MAUs/month | $0.00 |
+| Amazon API Gateway (REST API) | ~1,800 API calls | $3.50 per 1 million calls | ≈ $0.006 | 1,000,000 calls/month (first 12 months) | $0.00 |
+| Amazon S3 (Raw Image Bucket) | 245 PUTs + 245 GETs, ~0.5 GB storage | $0.005/1,000 PUTs, $0.0004/1,000 GETs, $0.023/GB-month | ≈ $0.004 | 2,000 PUTs + 20,000 GETs + 5 GB storage/month | $0.00 |
+| Amazon SQS (Message Queue) | ~735 requests | $0.40 per 1 million requests | ≈ $0.0003 | 1,000,000 requests/month | $0.00 |
+| AWS Lambda (3 Functions) | ~800 invocations, ~800 GB-seconds | $0.20 per 1 million invocations + $0.0000166667/GB-s | ≈ $0.013 | 1,000,000 invocations + 400,000 GB-seconds/month | $0.00 |
+| Amazon Rekognition (Damage Detection) | 245 processed images | $0.001/image | ≈ $0.245 | 5,000 images/month (first 12 months) | $0.00 |
+| Amazon Textract (Label OCR) | 245 pages | $0.0015/page | ≈ $0.368 | 1,000 pages/month (first 3 months) | $0.00 |
+| Amazon DynamoDB (Database) | 245 writes + 300 reads | $0.625/1M WRUs, $0.125/1M RRUs | ≈ $0.0002 | 25 WCU/RCU + 25 GB storage/month | $0.00 |
+| Amazon SNS (Alerting) | ~25 email alerts | $2.00 per 100,000 sent emails | ≈ $0.0005 | 1,000 emails/month (first 12 months) | $0.00 |
+| Amazon CloudWatch (Monitoring) | ~30 MB logs, 3-5 metrics, 3-5 alarms | $0.50/GB log, $0.30/metric-month, $0.10/alarm-month | ≈ $0.10 – $0,40 | 5 GB logs + 10 metrics + 10 alarms/month | $0.00 |
+| AWS IAM (Least Privilege Security) | Unlimited usage | Free | $0.00 | Always Free | $0.00 |
 
 ---
 
-### 4. Tổng hợp chi phí
+### 4. Cost Summary
 
-**Tổng theo đơn giá chuẩn (chưa áp Free Tier):** khoảng  $1,57 USD
+**Total Standard Cost (without Free Tier):** ≈ **$1.57 USD**
 
-Tổng chi phí thực tế ước tính (tài khoản mới, đã áp Free Tier): **$0,00 USD**
+**Actual Estimated Out-of-Pocket Cost (with Free Tier):** **$0.00 USD**
 
-Hai dòng trên phản ánh hai góc nhìn:
+These figures illustrate two viewpoints:
 
-- Chi phí theo đơn giá chuẩn nếu không có Free Tier.
-- Chi phí thực tế sẽ xuất hiện trên hóa đơn AWS trong tuần thử nghiệm, bằng $0,00 vì toàn bộ khối lượng sử dụng nằm trong hạn mức Free Tier.
-
----
-
-### 5. Dự báo khi mở rộng quy mô hoặc hết hạn Free Tier
-
-Nếu hệ thống vận hành liên tục trong một tháng đầy đủ, phần lớn dịch vụ vẫn nằm trong hạn mức Free Tier hàng tháng. Điểm cần lưu ý nhất là Amazon Textract vì hạn mức miễn phí chỉ kéo dài 3 tháng đầu. Tuy nhiên, ở quy mô hiện tại, tổng chi phí AWS hàng tháng dự kiến vẫn rất thấp, ngay cả khi không còn Free Tier.
+- Standard billing cost if Free Tier were inapplicable.
+- Actual billed amount during the pilot week ($0.00 due to full Free Tier coverage).
 
 ---
 
-### 6. Hạn chế của ước tính và khuyến nghị
+### 5. Scaling and Post-Free Tier Projection
 
-- Đây là ước tính dựa trên giả định lưu lượng, không phải số liệu billing thực tế.
-- Số liệu chính xác nhất là theo dõi trực tiếp trong AWS Cost Explorer sau khi hệ thống chạy thật.
-- Giá tham khảo theo vùng US East (N. Virginia); giá tại vùng khác có thể chênh lệch.
-- Chưa bao gồm các chi phí ngoài phạm vi bản vẽ như Support Plan, domain, Route 53, WAF hoặc chi phí nhân sự vận hành.
+If operated continuously over a full month, most service usage remains within Free Tier thresholds. The primary service to monitor closely is Amazon Textract, as its Free Tier allowance lasts for the first 3 months. However, at the current operational scale, the total monthly AWS bill remains negligible even after Free Tier expiration.
 
 ---
 
-### 7. Nguồn tham khảo
+### 6. Limitations and Recommendations
+
+- Estimations are based on projected workload traffic rather than historical billing exports.
+- Actual costs should be monitored actively via AWS Cost Explorer once production traffic begins.
+- Pricing references correspond to the US East (N. Virginia) region; pricing in other regions may vary slightly.
+- Excludes external expenses such as AWS Support Plans, custom domain names, Route 53, WAF, or operational labor.
+
+---
+
+### 7. References
 
 - AWS Lambda Pricing: https://aws.amazon.com/lambda/pricing/
 - Amazon API Gateway Pricing: https://aws.amazon.com/api-gateway/pricing/

@@ -6,27 +6,27 @@ chapter: false
 pre: " <b> 1.12. </b> "
 ---
 
-## Week 12: Finalization, System Handover and Internship Summary (20/07/2026 - 24/07/2026)
+## Week 12: Finalization, System Handover, and Internship Summary (20/07/2026 - 24/07/2026)
 
 **Week 12 Objectives:**
 
-- Khắc phục toàn bộ lỗi còn tồn đọng, đưa hệ thống vào vận hành chính thức.
-- Hoàn thiện báo cáo thực tập và tổng kết toàn bộ quá trình thực tập tại FCAJ.
+- Resolve all remaining bugs and deploy the system into official operation.
+- Finalize the internship report and summarize the entire internship experience at FCAJ.
 
 **Tasks completed this week:**
 
-| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
-|-----|-----------|--------------|-----------------|----------------|
-| 2 | Khắc phục các lỗi đã ghi nhận ở tuần 11 (giao diện, hiệu năng, bảo mật). Kiểm thử lại toàn bộ hệ thống sau khi sửa lỗi. | 20/07/2026 | 20/07/2026 | |
-| 3 | Viết tài liệu hướng dẫn sử dụng dashboard cho nhân viên kho. Viết tài liệu vận hành và xử lý sự cố cơ bản (runbook). | 21/07/2026 | 21/07/2026 | |
-| 4 | Bàn giao hệ thống Giám sát Chất lượng Hàng hóa cho bộ phận Logistics. Hướng dẫn trực tiếp cách vận hành, theo dõi và bổ sung tính năng mới. | 22/07/2026 | 22/07/2026 | |
-| 5 | Hoàn thiện toàn bộ nội dung Báo cáo thực tập: Bản đề xuất, Workshop, Tự đánh giá. Rà soát lại số liệu chi phí, kiến trúc và kết quả đạt được. | 23/07/2026 | 23/07/2026 | |
-| 6 | Tổng kết toàn bộ quá trình thực tập 3 tháng tại FCAJ. Hoàn thiện Phần 7: Chia sẻ, đóng góp ý kiến với chương trình FCAJ. | 24/07/2026 | 24/07/2026 | |
+| Day | Task | Start Date | Completion Date | Reference |
+|-----|------|------------|-----------------|-----------|
+| Mon | Fix bugs identified in Week 11 (UI, performance, security). Re-test the entire system after applying bug fixes. | 20/07/2026 | 20/07/2026 | |
+| Tue | Write user manuals for warehouse staff on how to use the dashboard. Write operational manuals and basic troubleshooting guides (runbooks). | 21/07/2026 | 21/07/2026 | |
+| Wed | Hand over the Cargo Quality Monitoring System to the Logistics department. Conduct direct training on system operation, monitoring, and future feature extension. | 22/07/2026 | 22/07/2026 | |
+| Thu | Finalize all sections of the Internship Report: Proposal, Workshop, Self-evaluation. Review cost estimates, architecture diagrams, and achieved results. | 23/07/2026 | 23/07/2026 | |
+| Fri | Summarize the entire 3-month internship experience at FCAJ. Complete Section 7: Sharing and Feedback regarding the FCAJ program. | 24/07/2026 | 24/07/2026 | |
 
 **Week 12 Results:**
 
-- Hệ thống hoạt động ổn định sau khi khắc phục toàn bộ lỗi tồn đọng, sẵn sàng vận hành chính thức.
-- Hoàn thành tài liệu hướng dẫn sử dụng và vận hành, giúp bộ phận Logistics tự quản lý hệ thống.
-- Bàn giao thành công hệ thống Giám sát Chất lượng Hàng hóa, được đội ngũ đánh giá đáp ứng đúng nhu cầu.
-- Hoàn thiện toàn bộ Báo cáo thực tập với đầy đủ các phần.
-- Tổng kết được những kiến thức, kỹ năng đã học và những trải nghiệm đáng nhớ trong 3 tháng thực tập tại First Cloud AI Journey.
+- The system operates stably after resolving all pending bugs and is ready for official operation.
+- Completed user manuals and operational documentation, enabling the Logistics team to manage the system autonomously.
+- Successfully handed over the Cargo Quality Monitoring System, which was well received and met user requirements.
+- Completed the Internship Report with all required sections.
+- Summarized the acquired knowledge, technical skills, and memorable experiences from the 3-month internship at First Cloud AI Journey.

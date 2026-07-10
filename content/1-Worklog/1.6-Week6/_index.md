@@ -10,22 +10,22 @@ pre: " <b> 1.6. </b> "
 
 **Week 6 Objectives:**
 
-- Tìm hiểu Amazon API Gateway để xây dựng API cho frontend tra cứu kết quả phân tích.
-- Thiết kế và kiểm thử các endpoint RESTful phục vụ dashboard quản lý.
+- Learn about Amazon API Gateway to build an API for the frontend to query analysis results.
+- Design and test RESTful endpoints to serve the management dashboard.
 
 **Tasks completed this week:**
 
-| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
-|-----|-----------|--------------|-----------------|----------------|
-| 2 | Tìm hiểu Amazon API Gateway: REST API và HTTP API. So sánh REST API và HTTP API để chọn phương án phù hợp cho dự án. | 08/06/2026 | 08/06/2026 | https://docs.aws.amazon.com/apigateway/ |
-| 3 | Thiết kế các API endpoint cần thiết: GET /scans, GET /scans/{orderId}, POST /upload-url lấy presigned URL upload ảnh lên S3. | 09/06/2026 | 09/06/2026 | |
-| 4 | Thực hành tạo API Gateway HTTP API. Tạo Lambda function trả về dữ liệu từ DynamoDB. Kết nối API Gateway với Lambda Integration. | 10/06/2026 | 10/06/2026 | https://cloudjourney.awsstudygroup.com/vi/ |
-| 5 | Kiểm thử các API endpoint bằng Postman/curl. Xử lý CORS để cho phép frontend gọi API từ trình duyệt. | 11/06/2026 | 11/06/2026 | https://docs.aws.amazon.com/apigateway/ |
-| 6 | Vẽ sơ đồ kiến trúc tổng thể của hệ thống giám sát hàng hóa (kiến trúc AWS Serverless). Trao đổi với mentor để rà soát kiến trúc đề xuất. | 12/06/2026 | 12/06/2026 | |
+| Day | Task | Start Date | Completion Date | Reference |
+|-----|------|------------|-----------------|-----------|
+| Mon | Study Amazon API Gateway: REST API and HTTP API. Compare REST API and HTTP API to choose the most suitable option for the project. | 08/06/2026 | 08/06/2026 | https://docs.aws.amazon.com/apigateway/ |
+| Tue | Design the required API endpoints: GET /scans, GET /scans/{orderId}, POST /upload-url to obtain a presigned URL for uploading images to S3. | 09/06/2026 | 09/06/2026 | |
+| Wed | Practice creating an API Gateway HTTP API. Create a Lambda function that returns data from DynamoDB. Connect API Gateway with Lambda Integration. | 10/06/2026 | 10/06/2026 | https://cloudjourney.awsstudygroup.com/vi/ |
+| Thu | Test API endpoints using Postman/curl. Handle CORS to allow the frontend to call the API from the browser. | 11/06/2026 | 11/06/2026 | https://docs.aws.amazon.com/apigateway/ |
+| Fri | Draw the overall system architecture diagram for the cargo monitoring system (AWS Serverless architecture). Discuss the proposed architecture with the mentor for review. | 12/06/2026 | 12/06/2026 | |
 
 **Week 6 Results:**
 
-- Hiểu sự khác biệt giữa REST API và HTTP API trên Amazon API Gateway.
-- Tạo thành công HTTP API với các endpoint phục vụ tra cứu kết quả phân tích.
-- Kiểm thử thành công các API endpoint qua Postman, xử lý CORS đúng cách.
-- Hoàn thành bản vẽ sơ đồ kiến trúc tổng thể AWS Serverless cho hệ thống, được mentor góp ý.
+- Understood the differences between REST API and HTTP API on Amazon API Gateway.
+- Successfully created an HTTP API with endpoints for querying analysis results.
+- Successfully tested all API endpoints via Postman and correctly handled CORS.
+- Completed the overall AWS Serverless architecture diagram for the system, with feedback from the mentor.

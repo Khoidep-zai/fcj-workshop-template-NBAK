@@ -16,11 +16,11 @@ I participated in building an **Automated Cargo Quality Monitoring System** usin
 
 | No. | Criteria | Description | Good | Fair | Average |
 |-----|----------|-------------|------|------|---------|
-| 1 | Technical knowledge & skills | Industry understanding, applying knowledge in practice | X | | |
+| 1 | Technical knowledge & skills | Industry understanding, applying knowledge in practice | | X | |
 | 2 | Learning ability | Absorbing new knowledge, learning quickly | | X | |
 | 3 | Proactivity | Self-directed study, taking on tasks without waiting for instructions | X | | |
 | 4 | Sense of responsibility | Completing work on time, ensuring quality | X | | |
-| 5 | Discipline | Adhering to schedules, regulations, and work processes | | | X |
+| 5 | Discipline | Adhering to schedules, regulations, and work processes | | X | |
 | 6 | Growth mindset | Willingness to receive feedback and improve | | X | |
 | 7 | Communication | Clearly presenting ideas and reporting on work | | X | |
 | 8 | Teamwork | Working effectively with colleagues | X | | |
