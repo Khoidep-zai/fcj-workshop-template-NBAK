@@ -8,7 +8,7 @@ pre: " <b> 5. </b> "
 
 # PART 5: WORKSHOP
 
-In this section, the student presents the workshop conducted during the internship: **Building an Asynchronous Image Processing Pipeline Using Amazon S3, SQS, and AWS Lambda**.
+In this section, My team will presents the workshop conducted during the internship: **Building an Asynchronous Image Processing Pipeline Using Amazon S3, SQS, and AWS Lambda**.
 
 ### Workshop Steps
 

@@ -8,7 +8,6 @@ pre: " <b> 3. </b> "
 
 # PART 3: BLOGS POSTED
 
-In this section, the student presents blogs written and posted during the internship at FCAJ, sharing technical knowledge and experiences.
 
 ### Blog List
 

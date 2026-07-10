@@ -1,9 +1,9 @@
 ---
-title: "Proposal Detail"
+title: "Proposal"
 date: 2026-07-24
-weight: 1
+weight: 2
 chapter: false
-pre: " <b> 2.1. </b> "
+pre: " <b> 2. </b> "
 ---
 
 # Automated Cargo Quality Monitoring Solution Based on Serverless and AI/ML

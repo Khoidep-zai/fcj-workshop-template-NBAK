@@ -1,9 +1,9 @@
 ---
-title: "Chi tiết đề xuất"
+title: "Đề xuất giải pháp"
 date: 2026-07-24
-weight: 1
+weight: 2
 chapter: false
-pre: " <b> 2.1. </b> "
+pre: " <b> 2. </b> "
 ---
 
 # Giải pháp tự động hóa giám sát chất lượng hàng hóa dựa trên Serverless và AI/ML
