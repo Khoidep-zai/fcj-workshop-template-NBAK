@@ -2,15 +2,17 @@
 title: "Tự đánh giá"
 date: 2026-07-24
 weight: 6
-chapter: true
+chapter: false
 pre: " <b> 6. </b> "
 ---
 
+<div style="text-align: left;">
+
 # PHẦN 6: TỰ ĐÁNH GIÁ
 
-Trong suốt thời gian thực tập tại First Cloud AI Journey (FCAJ) từ ngày 04/05/2026 đến 24/07/2026, tôi đã có cơ hội học hỏi, rèn luyện và áp dụng kiến thức được trang bị tại trường vào môi trường làm việc thực tế.
+Trong suốt thời gian thực tập tại **First Cloud AI Journey (FCAJ)** từ ngày **04/05/2026 đến 24/07/2026**, tôi đã có cơ hội học hỏi, rèn luyện và áp dụng kiến thức được trang bị tại trường vào môi trường làm việc thực tế.
 
-Tôi đã tham gia xây dựng hệ thống Giải pháp tự động hóa giám sát chất lượng hàng hóa Logistics sử dụng kiến trúc AWS Serverless và AI/ML, qua đó cải thiện kỹ năng lập trình Python, thiết kế kiến trúc cloud, sử dụng các dịch vụ AWS (Lambda, S3, SQS, Rekognition, Textract, DynamoDB, Cognito, Amplify, API Gateway) và kỹ năng viết báo cáo kỹ thuật.
+Tôi đã tham gia xây dựng hệ thống **Giải pháp tự động hóa giám sát chất lượng hàng hóa Logistics** sử dụng kiến trúc **AWS Serverless và AI/ML**, qua đó cải thiện kỹ năng **lập trình Python**, **thiết kế kiến trúc cloud**, sử dụng các dịch vụ AWS (**Lambda, S3, SQS, Rekognition, Textract, DynamoDB, Cognito, Amplify, API Gateway**) và kỹ năng **viết báo cáo kỹ thuật**.
 
 ## Bảng tự đánh giá
 
@@ -34,3 +36,5 @@ Tôi đã tham gia xây dựng hệ thống Giải pháp tự động hóa giám
 - Nâng cao tính kỷ luật, chấp hành nghiêm chỉnh nội quy của công ty.
 - Cải thiện tư duy giải quyết vấn đề, đặc biệt khi gặp lỗi hệ thống phức tạp.
 - Học cách giao tiếp tốt hơn trong công việc và xử lý tình huống linh hoạt hơn.
+
+</div>

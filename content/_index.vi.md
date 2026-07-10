@@ -36,7 +36,7 @@ pre: ""
 
 **Thời gian thực tập:** Từ ngày 04/05/2026 đến ngày 24/07/2026
 
-![Ảnh đại diện của bạn](/images/avatar.jpg)
+<img src="/images/avatar.jpg" width="180" style="border-radius: 8px; display: block; margin: 15px 0;" alt="Ảnh đại diện" />
 
 
 

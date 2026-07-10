@@ -36,7 +36,7 @@ pre: ""
 
 **Internship Period:** From 04/05/2026 to 24/07/2026
 
-![Your profile picture](/images/avatar.jpg)
+<img src="/images/avatar.jpg" width="180" style="border-radius: 8px; display: block; margin: 15px 0;" alt="Profile Picture" />
 
 
 

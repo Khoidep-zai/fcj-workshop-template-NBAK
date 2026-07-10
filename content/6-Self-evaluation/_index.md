@@ -2,15 +2,17 @@
 title: "Self-evaluation"
 date: 2026-07-24
 weight: 6
-chapter: true
+chapter: false
 pre: " <b> 6. </b> "
 ---
 
+<div style="text-align: left;">
+
 # PART 6: SELF-EVALUATION
 
-Throughout the internship at First Cloud AI Journey (FCAJ) from 04/05/2026 to 24/07/2026, I had the opportunity to learn, practice, and apply the knowledge gained at university to a real-world work environment.
+Throughout the internship at **First Cloud AI Journey (FCAJ)** from **04/05/2026 to 24/07/2026**, I had the opportunity to learn, practice, and apply the knowledge gained at university to a real-world work environment.
 
-I participated in building an **Automated Cargo Quality Monitoring System** using AWS Serverless architecture and AI/ML. Through this, I improved my Python programming skills, cloud architecture design, hands-on experience with AWS services (Lambda, S3, SQS, Rekognition, Textract, DynamoDB, Cognito, Amplify, API Gateway), and technical writing skills.
+I participated in building an **Automated Cargo Quality Monitoring System** using **AWS Serverless architecture and AI/ML**. Through this, I improved my **Python programming skills**, **cloud architecture design**, hands-on experience with AWS services (**Lambda, S3, SQS, Rekognition, Textract, DynamoDB, Cognito, Amplify, API Gateway**), and **technical writing skills**.
 
 ## Self-Evaluation Table
 
@@ -34,3 +36,5 @@ I participated in building an **Automated Cargo Quality Monitoring System** usin
 - Enhance discipline and strictly follow the company's internal regulations.
 - Improve problem-solving thinking, especially when encountering complex system errors.
 - Learn to communicate more effectively at work and handle situations more flexibly.
+
+</div>

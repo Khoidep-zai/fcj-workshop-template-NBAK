@@ -2,15 +2,15 @@
 title: "Workshop"
 date: 2026-07-24
 weight: 5
-chapter: true
+chapter: false
 pre: " <b> 5. </b> "
 ---
 
+<div style="text-align: left;">
+
 # PART 5: WORKSHOP
 
-In this section, My team will presents the workshop conducted during the internship: **Building an Asynchronous Image Processing Pipeline Using Amazon S3, SQS, and AWS Lambda**.
-
-### Workshop Steps
+### Content
 
 1. [5.1 — Workshop Overview](5.1-WorkshopOverview/)
 2. [5.2 — Step 1: Set Up IAM Role for Lambda](5.2-Step1/)
@@ -19,3 +19,5 @@ In this section, My team will presents the workshop conducted during the interns
 5. [5.5 — Step 4: Create and Write Code for AWS Lambda](5.5-Step4/)
 6. [5.6 — Step 5: Test the System](5.6-Step5/)
 7. [5.7 — Step 6: Clean Up Resources](5.7-Step6/)
+
+</div>
