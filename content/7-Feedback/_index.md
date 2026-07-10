@@ -1,46 +1,46 @@
 ---
-title: "Chia sẻ, đóng góp ý kiến"
+title: "Sharing and Feedback"
 date: 2026-07-24
 weight: 7
 chapter: true
 pre: " <b> 7. </b> "
 ---
 
-# PHẦN 7: CHIA SẺ, ĐÓNG GÓP Ý KIẾN
+# PART 7: SHARING AND FEEDBACK
 
-Trong phần này, sinh viên tự do đóng góp ý kiến cá nhân về những trải nghiệm khi tham gia chương trình First Cloud AI Journey, giúp team FCAJ cải thiện những vấn đề còn thiếu sót.
+In this section, the intern freely shares personal feedback about their experience participating in the First Cloud AI Journey program, with the aim of helping the FCAJ team improve any shortcomings.
 
-## 1. Đánh giá chung
+## 1. General Feedback
 
-**Môi trường làm việc:**
-Môi trường làm việc rất thân thiện và cởi mở. Các thành viên trong FCAJ luôn sẵn sàng hỗ trợ khi mình gặp khó khăn, kể cả ngoài giờ làm việc. Không gian làm việc gọn gàng, thoải mái, giúp mình tập trung tốt hơn.
+**Work Environment:**
+The work environment was very friendly and open. Members of the FCAJ team were always ready to help when I encountered difficulties, even outside of working hours. The workspace was tidy and comfortable, which helped me stay focused.
 
-**Sự hỗ trợ của mentor / team admin:**
-Mentor hướng dẫn rất chi tiết, giải thích rõ ràng khi mình chưa hiểu và luôn khuyến khích mình đặt câu hỏi. Mình đánh giá cao việc mentor cho phép mình thử và tự xử lý vấn đề thay vì chỉ đưa đáp án.
+**Mentor and Admin Team Support:**
+The mentor provided very detailed guidance, explained things clearly when I didn't understand, and always encouraged me to ask questions. I especially appreciated how the mentor allowed me to try things myself and work through problems rather than simply providing the answer.
 
-**Sự phù hợp giữa công việc và chuyên ngành học:**
-Công việc mình được giao phù hợp với kiến thức Công nghệ phần mềm đã học ở trường, đồng thời mở rộng thêm những mảng mới như thiết kế kiến trúc cloud, AI/ML và DevOps trên AWS.
+**Alignment Between Work and Academic Major:**
+The tasks I was assigned were well aligned with my Software Engineering background from university, while also expanding my knowledge into new areas such as cloud architecture design, AI/ML, and DevOps on AWS.
 
-**Cơ hội học hỏi & phát triển kỹ năng:**
-Trong quá trình thực tập, mình học được nhiều kỹ năng mới: thiết kế hệ thống Serverless, sử dụng AI/ML của AWS, viết blog kỹ thuật và tham gia workshop thực hành. Mentor chia sẻ nhiều kinh nghiệm thực tế giúp mình định hướng tốt hơn.
+**Learning and Skill Development Opportunities:**
+During the internship, I gained many new skills: designing Serverless systems, using AWS AI/ML services, writing technical blogs, and participating in hands-on workshops. The mentor shared a lot of practical experience that helped me develop a clearer direction.
 
-**Văn hóa & tinh thần đồng đội:**
-Văn hóa FCAJ rất tích cực: mọi người tôn trọng lẫn nhau, làm việc nghiêm túc nhưng vẫn vui vẻ. Điều này giúp mình cảm thấy mình là một phần của tập thể, dù chỉ là thực tập sinh.
+**Culture and Team Spirit:**
+The FCAJ culture was very positive: everyone respected each other, worked seriously but with a friendly atmosphere. This made me feel like a part of the team, even as an intern.
 
-## 2. Một số câu hỏi khác
+## 2. Additional Questions
 
-- Điều bạn hài lòng nhất trong thời gian thực tập?
-  Sự hỗ trợ nhiệt tình từ mentor và cơ hội thực chiến trên các dịch vụ AWS hiện đại.
-- Điều bạn nghĩ công ty cần cải thiện cho các thực tập sinh sau?
-  Cung cấp thêm tài liệu hướng dẫn chuyên sâu ban đầu để thực tập sinh nhanh chóng làm quen hệ thống.
-- Nếu giới thiệu cho bạn bè, bạn có khuyên họ thực tập ở đây không? Vì sao?
-  Chắc chắn có, vì đây là môi trường lý tưởng để rèn luyện kỹ năng thực tế về AWS và AI/ML.
+- What did you enjoy most during your internship?
+  The enthusiastic support from my mentor and the opportunity to work hands-on with modern AWS services.
+- What do you think the company should improve for future interns?
+  Providing more in-depth onboarding materials to help new interns get up to speed with the systems more quickly.
+- Would you recommend this internship to a friend? Why?
+  Absolutely, because this is an ideal environment for developing real-world skills in AWS and AI/ML.
 
-## 3. Đề xuất & mong muốn
+## 3. Suggestions and Wishes
 
-- Bạn có đề xuất gì để cải thiện trải nghiệm trong kỳ thực tập?
-  Tổ chức thêm các buổi Tech Talk chia sẻ kinh nghiệm từ các kỹ sư senior.
-- Bạn có muốn tiếp tục chương trình này trong tương lai?
-  Rất mong muốn có cơ hội tiếp tục đồng hành cùng FCAJ.
-- Góp ý khác (tự do chia sẻ):
-  Cảm ơn team FCAJ đã mang lại một kỳ thực tập ý nghĩa và bổ ích.
+- Do you have any suggestions for improving the internship experience?
+  Organize more Tech Talk sessions where senior engineers share their experiences.
+- Would you like to continue participating in this program in the future?
+  I would very much hope to have the opportunity to continue with FCAJ.
+- Other feedback (open sharing):
+  Thank you to the FCAJ team for providing such a meaningful and rewarding internship experience.

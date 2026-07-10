@@ -9,3 +9,9 @@ pre: " <b> 3. </b> "
 # PHẦN 3: CÁC BÀI BLOGS ĐÃ ĐĂNG
 
 Trong phần này, sinh viên trình bày các bài blog đã viết và đăng tải trong suốt quá trình thực tập tại FCAJ, chia sẻ kiến thức kỹ thuật và trải nghiệm.
+
+### Danh sách bài blog
+
+1. [Blog 1 — Samsung xử lý bài toán "giá bị lệch" nhờ AWS Lambda Response Streaming](3.1-Blog1/)
+2. [Blog 2 — S3 Intelligent-Tiering: Khi lưu trữ dữ liệu tự "biết" nên nằm ở tầng nào](3.2-Blog2/)
+3. [Blog 3](3.3-Blog3/)

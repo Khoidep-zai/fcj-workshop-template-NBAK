@@ -1,54 +1,54 @@
 ---
-title: "Bước 3: Cấu hình lưu trữ và sự kiện Amazon S3"
+title: "Step 3: Configure Amazon S3 Storage and Events"
 date: 2026-07-24
 weight: 4
 chapter: false
 pre: " <b> 5.4. </b> "
 ---
 
-# Bước 3: Cấu hình lưu trữ và sự kiện Amazon S3
+# Step 3: Configure Amazon S3 Storage and Events
 
-### Mục tiêu
+### Objective
 
-Trong bước này, bạn sẽ tạo S3 bucket để lưu ảnh và cấu hình để mỗi khi có ảnh mới được tải lên, Amazon S3 tự động gửi thông báo vào SQS queue đã tạo ở bước trước.
-
----
-
-### 3.1 - Tạo S3 Bucket
-
-1. Truy cập **Amazon S3**, sau đó chọn **Create bucket**.
-
-![Tạo S3 bucket](/images/5.4-Step3/image19.png)
-
-2. Đặt tên bucket theo định dạng **logistics-raw-images-&lt;tên-bạn&gt;**.
-
-Tên bucket phải là duy nhất trên toàn bộ AWS.
-
-![Đặt tên S3 bucket](/images/5.4-Step3/image20.png)
-
-3. Chọn Region **ap-southeast-1 (Singapore)** để gần Việt Nam.
-
-![Chọn Region Singapore](/images/5.4-Step3/image21.png)
-
-4. Giữ nguyên các cài đặt mặc định, sau đó chọn **Create bucket**.
-
-![Giữ cài đặt mặc định](/images/5.4-Step3/image22.png)
-
-![Tạo bucket thành công](/images/5.4-Step3/image23.png)
+In this step, you will create an S3 bucket to store images and configure it so that every time a new image is uploaded, Amazon S3 automatically sends a notification to the SQS queue created in the previous step.
 
 ---
 
-### 3.2 - Cấp quyền cho S3 gửi thông báo vào SQS
+### 3.1 - Create an S3 Bucket
 
-1. Vào **SQS Console**, chọn queue **image-processing-queue**.
+1. Go to **Amazon S3**, then click **Create bucket**.
 
-2. Mở tab **Access policy**, chọn chỉnh sửa policy.
+![Create S3 bucket](/images/5.4-Step3/image19.png)
 
-3. Thêm policy cho phép S3 gửi message vào SQS.
+2. Name the bucket following the format **logistics-raw-images-&lt;your-name&gt;**.
 
-![Mở Access policy của SQS](/images/5.4-Step3/image24.png)
+The bucket name must be globally unique across all of AWS.
 
-Ví dụ policy:
+![Name the S3 bucket](/images/5.4-Step3/image20.png)
+
+3. Select Region **ap-southeast-1 (Singapore)** for proximity to Vietnam.
+
+![Select Singapore Region](/images/5.4-Step3/image21.png)
+
+4. Keep the default settings, then click **Create bucket**.
+
+![Keep default settings](/images/5.4-Step3/image22.png)
+
+![Bucket created successfully](/images/5.4-Step3/image23.png)
+
+---
+
+### 3.2 - Grant S3 Permission to Send Notifications to SQS
+
+1. Go to the **SQS Console** and select the **image-processing-queue** queue.
+
+2. Open the **Access policy** tab and choose to edit the policy.
+
+3. Add a policy to allow S3 to send messages to SQS.
+
+![Open SQS Access policy](/images/5.4-Step3/image24.png)
+
+Example policy:
 
 ```json
 {
@@ -63,7 +63,7 @@ Ví dụ policy:
       "Resource": "arn:aws:sqs:ap-southeast-1:<account-id>:image-processing-queue",
       "Condition": {
         "ArnLike": {
-          "aws:SourceArn": "arn:aws:s3:::logistics-raw-images-<ten-ban>"
+          "aws:SourceArn": "arn:aws:s3:::logistics-raw-images-<your-name>"
         }
       }
     }
@@ -71,38 +71,38 @@ Ví dụ policy:
 }
 ```
 
-Thay **&lt;account-id&gt;** bằng AWS Account ID của bạn và thay **logistics-raw-images-&lt;ten-ban&gt;** bằng tên bucket đã tạo.
+Replace **&lt;account-id&gt;** with your AWS Account ID and **logistics-raw-images-&lt;your-name&gt;** with the name of the bucket you created.
 
-![Thêm policy cho S3 gửi message vào SQS](/images/5.4-Step3/image25.png)
+![Add S3 permission to send messages to SQS](/images/5.4-Step3/image25.png)
 
 ---
 
-### 3.3 - Cấu hình S3 Event Notification
+### 3.3 - Configure S3 Event Notification
 
-1. Vào bucket vừa tạo, mở tab **Properties**, kéo xuống phần **Event notifications**, sau đó chọn **Create event notification**.
+1. Go to the bucket you just created, open the **Properties** tab, scroll down to the **Event notifications** section, then click **Create event notification**.
 
-![Mở Event notifications](/images/5.4-Step3/image26.png)
+![Open Event notifications](/images/5.4-Step3/image26.png)
 
 ![Create event notification](/images/5.4-Step3/image27.png)
 
-2. Đặt tên event là **new-image-uploaded**.
+2. Name the event **new-image-uploaded**.
 
-![Đặt tên event notification](/images/5.4-Step3/image28.png)
+![Name the event notification](/images/5.4-Step3/image28.png)
 
-3. Ở phần **Event types**, tích chọn **s3:ObjectCreated:***.
+3. Under **Event types**, check **s3:ObjectCreated:***.
 
-![Chọn event type ObjectCreated](/images/5.4-Step3/image29.png)
+![Select ObjectCreated event type](/images/5.4-Step3/image29.png)
 
-4. Ở phần **Prefix/Suffix**, nhập các suffix ảnh như **.jpg**, **.jpeg**, **.png** để chỉ kích hoạt khi có ảnh tải lên.
+4. Under **Prefix/Suffix**, enter image suffixes such as **.jpg**, **.jpeg**, **.png** to trigger only when image files are uploaded.
 
-Cấu hình này giúp bỏ qua các file không phải ảnh như `.txt` hoặc `.pdf`.
+This configuration ensures that non-image files such as `.txt` or `.pdf` are ignored.
 
-![Cấu hình suffix file ảnh](/images/5.4-Step3/image30.png)
+![Configure image file suffixes](/images/5.4-Step3/image30.png)
 
-5. Ở phần **Destination**, chọn **SQS Queue**, sau đó chọn queue **image-processing-queue**.
+5. Under **Destination**, select **SQS Queue**, then choose the **image-processing-queue** queue.
 
-![Chọn SQS queue làm destination](/images/5.4-Step3/image31.png)
+![Select SQS queue as destination](/images/5.4-Step3/image31.png)
 
-6. Chọn **Save changes** để lưu cấu hình.
+6. Click **Save changes** to save the configuration.
 
-![Lưu event notification](/images/5.4-Step3/image32.png)
+![Save event notification](/images/5.4-Step3/image32.png)

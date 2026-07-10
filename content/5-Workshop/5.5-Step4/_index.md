@@ -1,88 +1,88 @@
 ---
-title: "Bước 4: Tạo và viết code cho AWS Lambda"
+title: "Step 4: Create and Write Code for AWS Lambda"
 date: 2026-07-24
 weight: 5
 chapter: false
 pre: " <b> 5.5. </b> "
 ---
 
-# Bước 4: Tạo và viết code cho AWS Lambda
+# Step 4: Create and Write Code for AWS Lambda
 
-### Mục tiêu
+### Objective
 
-Trong bước này, bạn sẽ tạo Lambda Function để nhận message từ Amazon SQS, đọc thông tin ảnh được upload lên Amazon S3 và gọi các dịch vụ AI như Amazon Rekognition và Amazon Textract để phân tích ảnh.
+In this step, you will create a Lambda Function to receive messages from Amazon SQS, read information about images uploaded to Amazon S3, and call AI services such as Amazon Rekognition and Amazon Textract to analyze the images.
 
 ---
 
-### 4.1 - Tạo Lambda Function
+### 4.1 - Create the Lambda Function
 
-1. Truy cập **AWS Lambda**, chọn **Create function**.
+1. Go to **AWS Lambda** and click **Create function**.
 
-![Truy cập AWS Lambda](/images/5.5-Step4/image1.png)
+![Go to AWS Lambda](/images/5.5-Step4/image1.png)
 
-2. Chọn **Author from scratch**.
+2. Select **Author from scratch**.
 
-![Chọn Author from scratch](/images/5.5-Step4/image2.png)
+![Select Author from scratch](/images/5.5-Step4/image2.png)
 
-![Tạo Lambda function](/images/5.5-Step4/image3.png)
+![Create Lambda function](/images/5.5-Step4/image3.png)
 
-3. Cấu hình Lambda Function.
+3. Configure the Lambda Function.
 
-![Cấu hình Lambda function](/images/5.5-Step4/image4.png)
+![Configure Lambda function](/images/5.5-Step4/image4.png)
 
-![Chọn runtime và role](/images/5.5-Step4/image5.png)
+![Select runtime and role](/images/5.5-Step4/image5.png)
 
-Gợi ý cấu hình:
+Suggested configuration:
 
 - Function name: **image-quality-processor**
 - Runtime: **Python 3.x**
-- Execution role: chọn IAM Role **Lambda-ImageProcessing-Role** đã tạo ở bước 1
+- Execution role: select the IAM Role **Lambda-ImageProcessing-Role** created in Step 1
 
-4. Chọn **Create function**.
+4. Click **Create function**.
 
 ![Create function](/images/5.5-Step4/image6.png)
 
-5. Vào tab **Configuration**, chọn **General configuration**, sau đó chọn **Edit**.
+5. Go to the **Configuration** tab, select **General configuration**, then click **Edit**.
 
-![Mở General configuration](/images/5.5-Step4/image7.png)
+![Open General configuration](/images/5.5-Step4/image7.png)
 
-6. Đặt **Timeout = 60 giây**, sau đó lưu cấu hình.
+6. Set **Timeout = 60 seconds**, then save the configuration.
 
-![Đặt timeout cho Lambda](/images/5.5-Step4/image8.png)
-
----
-
-### 4.2 - Gắn SQS làm Trigger
-
-1. Ở trang Lambda Function, chọn **Add trigger**.
-
-![Add trigger cho Lambda](/images/5.5-Step4/image9.png)
-
-2. Chọn source là **SQS**.
-
-![Chọn SQS trigger](/images/5.5-Step4/image10.png)
-
-3. Chọn queue **image-processing-queue**.
-
-4. Cấu hình **Batch size = 1**.
-
-Batch size bằng 1 giúp Lambda xử lý từng message một, phù hợp cho lab vì dễ quan sát log và debug.
-
-5. Chọn **Add**.
-
-![Cấu hình SQS trigger](/images/5.5-Step4/image11.png)
+![Set Lambda timeout](/images/5.5-Step4/image8.png)
 
 ---
 
-### 4.3 - Viết code Python
+### 4.2 - Add SQS as a Trigger
 
-1. Vào tab **Code**.
+1. On the Lambda Function page, click **Add trigger**.
 
-2. Xóa code mẫu, dán đoạn code Python xử lý SQS message, sau đó chọn **Deploy** để lưu code.
+![Add trigger to Lambda](/images/5.5-Step4/image9.png)
 
-![Viết code Lambda và Deploy](/images/5.5-Step4/image12.png)
+2. Select **SQS** as the trigger source.
 
-Code mẫu:
+![Select SQS trigger](/images/5.5-Step4/image10.png)
+
+3. Select the **image-processing-queue** queue.
+
+4. Set **Batch size = 1**.
+
+A batch size of 1 makes Lambda process one message at a time, which is ideal for this lab since it makes logs easier to observe and debug.
+
+5. Click **Add**.
+
+![Configure SQS trigger](/images/5.5-Step4/image11.png)
+
+---
+
+### 4.3 - Write the Python Code
+
+1. Go to the **Code** tab.
+
+2. Delete the sample code, paste the Python code for processing SQS messages, then click **Deploy** to save.
+
+![Write Lambda code and Deploy](/images/5.5-Step4/image12.png)
+
+Sample code:
 
 ```python
 import json

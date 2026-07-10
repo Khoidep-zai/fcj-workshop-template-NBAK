@@ -1,33 +1,35 @@
 ---
-title: "Tổng quan Workshop"
+title: "Workshop Overview"
 date: 2026-07-24
 weight: 1
 chapter: false
 pre: " <b> 5.1. </b> "
 ---
 
-# Xây dựng luồng xử lý hình ảnh bất đồng bộ sử dụng Amazon S3, SQS và AWS Lambda
+# Building an Asynchronous Image Processing Pipeline Using Amazon S3, SQS, and AWS Lambda
 
-### Tóm tắt về workshop
+### Workshop Summary
 
-Workshop này hướng dẫn bạn xây dựng một luồng xử lý ảnh bất đồng bộ (asynchronous) theo mô hình Event‑Driven trên AWS, giải quyết bài toán “nhiều người dùng upload ảnh cùng lúc” nhưng vẫn đảm bảo hệ thống ổn định, dễ mở rộng và kiểm soát chi phí.
+This workshop guides you through building an asynchronous image processing pipeline following the Event-Driven architecture on AWS. It solves the challenge of "multiple users uploading images simultaneously" while ensuring system stability, scalability, and cost control.
 
 ---
 
-### Mục tiêu chính   
+### Main Objectives
 
-- Thiết kế kiến trúc **S3 → SQS → Lambda** để xử lý ảnh theo hàng đợi, tránh Lambda bị gọi ồ ạt khi có nhiều upload đồng thời.
-- Viết Lambda (Python) để:
-  - Nhận message từ SQS (chứa sự kiện từ S3)
-  - Tải ảnh từ S3
-  - Gọi Amazon Rekognition để gợi ý nhãn/nhận diện tình trạng (ví dụ: kiện hàng hư hỏng)
-  - Gọi Amazon Textract để trích xuất văn bản trên nhãn dán (mã vận đơn, thông tin tuyến, SĐT, …)
-  - Ghi kết quả ra CloudWatch Logs để quan sát và kiểm thử
-### Bạn sẽ học được gì
-  - Vì sao cần SQS làm “buffer” giữa S3 và Lambda trong hệ thống có tải cao.
-  - Cách cấu hình IAM Role theo nguyên tắc Least Privilege (cấp đúng quyền cần thiết).
-  - Cách tạo & cấu hình:
-    - S3 bucket và Event Notification
-    - SQS Standard Queue với các thông số quan trọng (Visibility Timeout, retention…)
-    - Lambda Trigger từ SQS và xử lý từng message (batch size nhỏ để dễ quan sát)
-  - Quy trình Testing & Validation end‑to‑end và Clean up tài nguyên để tránh phát sinh chi phí.
+- Design the **S3 → SQS → Lambda** architecture to process images via a queue, preventing Lambda from being overwhelmed by concurrent upload events.
+- Write a Lambda function (Python) to:
+  - Receive messages from SQS (containing S3 events)
+  - Download images from S3
+  - Call Amazon Rekognition to detect labels and identify conditions (e.g., damaged packages)
+  - Call Amazon Textract to extract text from shipping labels (tracking numbers, route info, phone numbers, etc.)
+  - Write results to CloudWatch Logs for observation and testing
+
+### What You Will Learn
+
+  - Why SQS is needed as a "buffer" between S3 and Lambda in high-load systems.
+  - How to configure an IAM Role following the Least Privilege principle (granting only the necessary permissions).
+  - How to create and configure:
+    - An S3 bucket and Event Notification
+    - An SQS Standard Queue with important parameters (Visibility Timeout, retention period, etc.)
+    - A Lambda Trigger from SQS and how to process individual messages (small batch size for easy observation)
+  - The end-to-end Testing & Validation process and how to clean up resources to avoid unnecessary costs.

@@ -1,36 +1,36 @@
 ---
-title: "Tự đánh giá"
+title: "Self-evaluation"
 date: 2026-07-24
 weight: 6
 chapter: true
 pre: " <b> 6. </b> "
 ---
 
-# PHẦN 6: TỰ ĐÁNH GIÁ
+# PART 6: SELF-EVALUATION
 
-Trong suốt thời gian thực tập tại First Cloud AI Journey (FCAJ) từ ngày 04/05/2026 đến 24/07/2026, tôi đã có cơ hội học hỏi, rèn luyện và áp dụng kiến thức được trang bị tại trường vào môi trường làm việc thực tế.
+Throughout the internship at First Cloud AI Journey (FCAJ) from 04/05/2026 to 24/07/2026, I had the opportunity to learn, practice, and apply the knowledge gained at university to a real-world work environment.
 
-Tôi đã tham gia xây dựng hệ thống Giải pháp tự động hóa giám sát chất lượng hàng hóa Logistics sử dụng kiến trúc AWS Serverless và AI/ML, qua đó cải thiện kỹ năng lập trình Python, thiết kế kiến trúc cloud, sử dụng các dịch vụ AWS (Lambda, S3, SQS, Rekognition, Textract, DynamoDB, Cognito, Amplify, API Gateway) và kỹ năng viết báo cáo kỹ thuật.
+I participated in building an **Automated Cargo Quality Monitoring System** using AWS Serverless architecture and AI/ML. Through this, I improved my Python programming skills, cloud architecture design, hands-on experience with AWS services (Lambda, S3, SQS, Rekognition, Textract, DynamoDB, Cognito, Amplify, API Gateway), and technical writing skills.
 
-## Bảng tự đánh giá
+## Self-Evaluation Table
 
-| STT | Tiêu chí | Mô tả | Tốt | Khá | TB |
-|-----|---------|-------|-----|-----|-----|
-| 1 | Kiến thức & kỹ năng chuyên môn | Hiểu biết về ngành, áp dụng kiến thức vào thực tế | X | | |
-| 2 | Khả năng học hỏi | Tiếp thu kiến thức mới, học hỏi nhanh | | X | |
-| 3 | Chủ động | Tự tìm hiểu, nhận nhiệm vụ mà không chờ chỉ dẫn | X | | |
-| 4 | Tinh thần trách nhiệm | Hoàn thành công việc đúng hạn, đảm bảo chất lượng | X | | |
-| 5 | Kỷ luật | Tuân thủ giờ giấc, nội quy, quy trình làm việc | | | X |
-| 6 | Tính cầu tiến | Sẵn sàng nhận feedback và cải thiện bản thân | | X | |
-| 7 | Giao tiếp | Trình bày ý tưởng, báo cáo công việc rõ ràng | | X | |
-| 8 | Hợp tác nhóm | Làm việc hiệu quả với đồng nghiệp | X | | |
-| 9 | Ứng xử chuyên nghiệp | Tôn trọng đồng nghiệp, môi trường làm việc | X | | |
-| 10 | Tư duy giải quyết vấn đề | Nhận diện vấn đề, đề xuất giải pháp | | X | |
-| 11 | Đóng góp vào dự án | Hiệu quả công việc, sáng kiến cải tiến | X | | |
-| 12 | Tổng thể | Đánh giá chung về toàn bộ quá trình thực tập | X | | |
+| No. | Criteria | Description | Good | Fair | Average |
+|-----|----------|-------------|------|------|---------|
+| 1 | Technical knowledge & skills | Industry understanding, applying knowledge in practice | X | | |
+| 2 | Learning ability | Absorbing new knowledge, learning quickly | | X | |
+| 3 | Proactivity | Self-directed study, taking on tasks without waiting for instructions | X | | |
+| 4 | Sense of responsibility | Completing work on time, ensuring quality | X | | |
+| 5 | Discipline | Adhering to schedules, regulations, and work processes | | | X |
+| 6 | Growth mindset | Willingness to receive feedback and improve | | X | |
+| 7 | Communication | Clearly presenting ideas and reporting on work | | X | |
+| 8 | Teamwork | Working effectively with colleagues | X | | |
+| 9 | Professional conduct | Respecting colleagues and the work environment | X | | |
+| 10 | Problem-solving mindset | Identifying problems and proposing solutions | | X | |
+| 11 | Project contribution | Work effectiveness, improvement initiatives | X | | |
+| 12 | Overall | General assessment of the entire internship period | X | | |
 
-## Cần cải thiện
+## Areas for Improvement
 
-- Nâng cao tính kỷ luật, chấp hành nghiêm chỉnh nội quy của công ty.
-- Cải thiện tư duy giải quyết vấn đề, đặc biệt khi gặp lỗi hệ thống phức tạp.
-- Học cách giao tiếp tốt hơn trong công việc và xử lý tình huống linh hoạt hơn.
+- Enhance discipline and strictly follow the company's internal regulations.
+- Improve problem-solving thinking, especially when encountering complex system errors.
+- Learn to communicate more effectively at work and handle situations more flexibly.

@@ -1,63 +1,63 @@
 ---
-title: "Bước 1: Chuẩn bị IAM Role cho Lambda"
+title: "Step 1: Set Up IAM Role for Lambda"
 date: 2026-07-24
 weight: 2
 chapter: false
 pre: " <b> 5.2. </b> "
 ---
 
-# Bước 1: Chuẩn bị IAM Role cho Lambda
+# Step 1: Set Up IAM Role for Lambda
 
-### Giới thiệu
+### Introduction
 
-IAM Role là quyền mà Lambda sử dụng để truy cập các dịch vụ AWS cần thiết trong workshop như Amazon S3, Amazon SQS, Amazon Rekognition và Amazon Textract.
+An IAM Role defines the permissions that Lambda uses to access the required AWS services in this workshop, including Amazon S3, Amazon SQS, Amazon Rekognition, and Amazon Textract.
 
-Trong bước này, bạn sẽ tạo một IAM Role cho Lambda và gắn các policy cần thiết để Lambda có thể đọc dữ liệu, nhận message và ghi log trong quá trình xử lý ảnh.
-
----
-
-### Các bước thực hiện
-
-1. Truy cập **AWS Console**, tìm dịch vụ **IAM**.
-
-![Tìm dịch vụ IAM](/images/5.2-Step1/image1.png)
-
-2. Chọn **Roles**, sau đó chọn **Create role**.
-
-![Chọn Roles và Create role](/images/5.2-Step1/image2.png)
-
-3. Ở phần **Trusted entity type**, chọn **AWS service**.
-
-4. Ở phần **Use case**, chọn **Lambda**, sau đó chọn **Next**.
-
-![Chọn AWS service và Lambda](/images/5.2-Step1/image3.png)
-
-5. Tìm và gắn lần lượt các policy cần thiết cho Lambda.
-
-![Tìm policy cho Lambda](/images/5.2-Step1/image4.png)
-
-![Chọn policy cho Lambda](/images/5.2-Step1/image5.png)
-
-![Gắn policy AWSLambdaBasicExecutionRole](/images/5.2-Step1/image6.png)
-
-![Gắn policy AmazonS3ReadOnlyAccess](/images/5.2-Step1/image7.png)
-
-![Gắn policy AmazonSQSFullAccess](/images/5.2-Step1/image8.png)
-
-![Gắn policy Rekognition và Textract](/images/5.2-Step1/image9.png)
-
-6. Đặt tên role là **Lambda-ImageProcessing-Role**, sau đó chọn **Create role**.
-
-![Đặt tên IAM Role](/images/5.2-Step1/image10.png)
-
-![Tạo IAM Role](/images/5.2-Step1/image11.png)
+In this step, you will create an IAM Role for Lambda and attach the necessary policies so that Lambda can read data, receive messages, and write logs during image processing.
 
 ---
 
-### Lưu ý bảo mật
+### Steps
 
-Trong môi trường thực tế, thay vì dùng policy có sẵn của AWS, bạn nên tự viết **Custom Policy** để giới hạn quyền chỉ trên đúng bucket hoặc queue cụ thể.
+1. Go to the **AWS Console** and search for the **IAM** service.
 
-Đây là best practice bảo mật theo nguyên tắc **Least Privilege**, tức là chỉ cấp đúng quyền cần thiết và không cấp dư quyền.
+![Search for the IAM service](/images/5.2-Step1/image1.png)
 
-![Custom policy theo nguyên tắc Least Privilege](/images/5.2-Step1/image12.png)
+2. Select **Roles**, then click **Create role**.
+
+![Select Roles and Create role](/images/5.2-Step1/image2.png)
+
+3. Under **Trusted entity type**, select **AWS service**.
+
+4. Under **Use case**, select **Lambda**, then click **Next**.
+
+![Select AWS service and Lambda](/images/5.2-Step1/image3.png)
+
+5. Search for and attach the required policies for Lambda one by one.
+
+![Search for Lambda policies](/images/5.2-Step1/image4.png)
+
+![Select Lambda policies](/images/5.2-Step1/image5.png)
+
+![Attach AWSLambdaBasicExecutionRole policy](/images/5.2-Step1/image6.png)
+
+![Attach AmazonS3ReadOnlyAccess policy](/images/5.2-Step1/image7.png)
+
+![Attach AmazonSQSFullAccess policy](/images/5.2-Step1/image8.png)
+
+![Attach Rekognition and Textract policies](/images/5.2-Step1/image9.png)
+
+6. Name the role **Lambda-ImageProcessing-Role**, then click **Create role**.
+
+![Name the IAM Role](/images/5.2-Step1/image10.png)
+
+![Create the IAM Role](/images/5.2-Step1/image11.png)
+
+---
+
+### Security Note
+
+In a production environment, instead of using AWS managed policies, you should write a **Custom Policy** to restrict permissions to only the specific bucket or queue required.
+
+This is a security best practice following the **Least Privilege** principle — granting only the exact permissions needed, nothing more.
+
+![Custom policy following the Least Privilege principle](/images/5.2-Step1/image12.png)

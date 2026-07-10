@@ -1,66 +1,66 @@
 ---
-title: "Bước 5: Kiểm thử hệ thống"
+title: "Step 5: Test the System"
 date: 2026-07-24
 weight: 6
 chapter: false
 pre: " <b> 5.6. </b> "
 ---
 
-# Bước 5: Kiểm thử hệ thống
+# Step 5: Test the System
 
-### Mục tiêu
+### Objective
 
-Xác nhận toàn bộ luồng **S3 -> SQS -> Lambda -> AI** hoạt động đúng.
+Verify that the entire **S3 → SQS → Lambda → AI** pipeline is working correctly.
 
-Trong bước này, bạn sẽ upload ảnh lên S3, kiểm tra Lambda xử lý message từ SQS và xem kết quả phân tích trong CloudWatch Logs.
-
----
-
-### 5.1 - Chuẩn bị ảnh test
-
-Chuẩn bị ít nhất 2 loại ảnh:
-
-- Ảnh kiện hàng bị móp hoặc rách để kiểm tra Amazon Rekognition phát hiện đúng nội dung ảnh.
-- Ảnh có nhãn dán với mã vận đơn rõ ràng để kiểm tra Amazon Textract trích xuất đúng văn bản.
+In this step, you will upload images to S3, verify that Lambda processes the SQS messages, and review the analysis results in CloudWatch Logs.
 
 ---
 
-### 5.2 - Tải ảnh lên S3
+### 5.1 - Prepare Test Images
 
-1. Vào S3 bucket **logistics-raw-images-&lt;tên-bạn&gt;**, sau đó chọn **Upload**.
+Prepare at least 2 types of images:
 
-2. Tải lên khoảng **5-10 ảnh** cùng lúc để kiểm tra khả năng xử lý song song.
-
-3. Chọn **Upload** để bắt đầu tải ảnh.
-
-![Upload ảnh lên S3](/images/5.6-Step5/image13.png)
-
-![Hoàn tất upload ảnh](/images/5.6-Step5/image14.png)
+- A damaged or dented package image to verify that Amazon Rekognition correctly identifies the image content.
+- An image with a shipping label containing a clearly visible tracking number to verify that Amazon Textract correctly extracts the text.
 
 ---
 
-### 5.3 - Kiểm tra CloudWatch Logs
+### 5.2 - Upload Images to S3
 
-1. Truy cập **CloudWatch**, chọn **Log groups**.
+1. Go to the S3 bucket **logistics-raw-images-&lt;your-name&gt;**, then click **Upload**.
 
-2. Tìm log group **/aws/lambda/image-quality-processor**.
+2. Upload approximately **5–10 images** at once to test parallel processing capability.
 
-3. Chọn log stream mới nhất và kiểm tra output từ Lambda.
+3. Click **Upload** to start uploading.
 
-![Kiểm tra CloudWatch Log groups](/images/5.6-Step5/image15.png)
+![Upload images to S3](/images/5.6-Step5/image13.png)
 
-![Kiểm tra output Lambda](/images/5.6-Step5/image16.png)
+![Upload complete](/images/5.6-Step5/image14.png)
 
 ---
 
-### 5.4 - Kiểm tra SQS đã xử lý sạch
+### 5.3 - Check CloudWatch Logs
 
-1. Vào **SQS Console**, chọn queue **image-processing-queue**.
+1. Go to **CloudWatch** and select **Log groups**.
 
-2. Chọn **Send and receive messages**.
+2. Search for the log group **/aws/lambda/image-quality-processor**.
 
-3. Chọn **Poll for messages**.
+3. Select the latest log stream and review the Lambda output.
 
-Nếu queue trống, nghĩa là Lambda đã xử lý hết toàn bộ tin nhắn thành công.
+![Check CloudWatch Log groups](/images/5.6-Step5/image15.png)
 
-![Kiểm tra message trong SQS](/images/5.6-Step5/image17.png)
+![Check Lambda output](/images/5.6-Step5/image16.png)
+
+---
+
+### 5.4 - Verify SQS Queue is Empty
+
+1. Go to the **SQS Console** and select the **image-processing-queue** queue.
+
+2. Click **Send and receive messages**.
+
+3. Click **Poll for messages**.
+
+If the queue is empty, it means Lambda has successfully processed all messages.
+
+![Check messages in SQS](/images/5.6-Step5/image17.png)

@@ -6,112 +6,112 @@ chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-# Bài thu hoạch "FCAJ Community Day - Conference Call - May"
+# Summary Report: "FCAJ Community Day - Conference Call - May"
 
-### Mục Đích Của Sự Kiện
+### Purpose of the Event
 
-- Kết nối cộng đồng thực tập sinh FCAJ (First Cloud AI Journey) thông qua các buổi chia sẻ trực tiếp tại Bitexco Financial Tower
-- Cập nhật xu hướng ứng dụng AI vào xây dựng sản phẩm và vận hành hệ thống
-- Giới thiệu các dịch vụ nền tảng của AWS (CloudFront, Amazon Quick) và cách khai thác trong thực tế
-- Chia sẻ kinh nghiệm thực chiến từ các dự án hackathon và bài toán doanh nghiệp (credit scoring cho startup)
+- Connect the FCAJ (First Cloud AI Journey) internship community through in-person sharing sessions at Bitexco Financial Tower
+- Update on trends in applying AI to product development and system operations
+- Introduce core AWS services (CloudFront, Amazon Quick) and how to leverage them in practice
+- Share hands-on experience from hackathon projects and enterprise use cases (credit scoring for startups)
 
-### Danh Sách Diễn Giả
+### Speaker List
 
-- Đại diện đội ngũ AWS và cộng đồng FCAJ phụ trách các chủ đề: Context Engineering & AI, CloudFront, Amazon Quick, LLM Determinism, Multi-Agent System
-- Đội thi đến từ LotusHacks Hackathon chia sẻ hành trình xây dựng sản phẩm UTMorpho
-- *(Thông tin tên cụ thể của từng diễn giả sẽ được bổ sung theo tài liệu chương trình chính thức của sự kiện)*
+- Representatives from the AWS and FCAJ community teams covering topics: Context Engineering & AI, CloudFront, Amazon Quick, LLM Determinism, Multi-Agent System
+- The LotusHacks Hackathon team sharing their journey building the UTMorpho product
+- *(Specific speaker names will be added based on the official event program documentation)*
 
-### Nội Dung Nổi Bật
+### Highlights
 
 #### Context Is Everything: Making AI Actually Work for You
 
-- Lý do vì sao AI "thất bại" khi thiếu context, và context thực sự có nghĩa là gì trong tương tác với AI
-- Sự chuyển dịch từ prompt engineering đơn thuần sang khái niệm "Second AI Brain" - AI có khả năng ghi nhớ và học hỏi theo thời gian
-- Mối liên hệ giữa chất lượng context đầu vào và chất lượng kết quả đầu ra của AI
-- Định hướng nghề nghiệp cho sinh viên muốn bắt đầu xây dựng sản phẩm với AI
+- Why AI "fails" when context is missing, and what context truly means in AI interaction
+- The shift from plain prompt engineering to the "Second AI Brain" concept — AI with persistent memory and continuous learning
+- The relationship between input context quality and the quality of AI output
+- Career guidance for students who want to start building products with AI
 
-#### 36 hrs với LotusHacks – Building UTMorpho from Idea to Reality
+#### 36 hrs with LotusHacks – Building UTMorpho from Idea to Reality
 
-- Hành trình từ ý tưởng ban đầu đến khi định hình rõ bài toán mà UTMorpho giải quyết
-- Áp lực và kỷ luật cần có khi phát triển sản phẩm trong 36 giờ liên tục
-- Những thất bại, điểm nghẽn và các bước ngoặt (turning points) trong quá trình phát triển
-- Demo tổng quan sản phẩm UTMorpho và các bài học rút ra sau cuộc thi
+- The journey from initial idea to clearly defining the problem UTMorpho solves
+- The pressure and discipline required when developing a product in 36 consecutive hours
+- Failures, bottlenecks, and turning points during the development process
+- Overall UTMorpho product demo and key takeaways from the competition
 
 #### From Edge To Origin: CloudFront as Your Foundation
 
-- Amazon CloudFront phù hợp với nhiều loại workload khác nhau, không chỉ dừng ở phân phối nội dung tĩnh
-- Chiến lược tối ưu chi phí (cost optimization) khi sử dụng CloudFront
-- Các khả năng bảo mật tích hợp sẵn giúp bảo vệ ứng dụng ở lớp edge
-- Cải thiện độ tin cậy (reliability) và hiệu năng (performance) cho hệ thống nhờ kiến trúc phân tán toàn cầu
+- Amazon CloudFront is suitable for many types of workloads, not just static content delivery
+- Cost optimization strategies when using CloudFront
+- Built-in security capabilities that protect applications at the edge layer
+- Improved reliability and performance through a globally distributed architecture
 
 #### Friendly AI Assistant with Amazon Quick
 
-- **Quick Chat Agent**: trợ lý AI hỗ trợ khai thác dữ liệu và phân tích insight
-- **Quick Flows**: tạo workflow thông minh bằng ngôn ngữ tự nhiên, không cần viết code
-- **Quick Spaces**: không gian cộng tác giúp biến insight cá nhân thành tri thức chung của team
-- **Quick Sight**: xây dựng dashboard và báo cáo từ dữ liệu thô bằng ngôn ngữ tự nhiên
+- **Quick Chat Agent**: AI assistant for data exploration and insight analysis
+- **Quick Flows**: create intelligent workflows using natural language, no coding required
+- **Quick Spaces**: collaborative space to transform individual insights into team-wide knowledge
+- **Quick Sight**: build dashboards and reports from raw data using natural language
 
 #### Non-Determinism of "Deterministic" LLM Settings
 
-- Cách LLM lựa chọn token tiếp theo trong quá trình sinh văn bản
-- Giả định phổ biến: Temperature = 0 sẽ đảm bảo tính xác định (determinism) tuyệt đối
-- Thực tế: các tối ưu hóa ở tầng inference (batching, phần cứng, floating-point) khiến kết quả vẫn có thể khác nhau
-- Tác động thực tế đến các hệ thống production và chiến lược giảm thiểu rủi ro này
+- How LLMs select the next token during text generation
+- A common assumption: Temperature = 0 guarantees absolute determinism
+- Reality: optimizations at the inference layer (batching, hardware, floating-point arithmetic) mean results can still vary
+- Real-world impact on production systems and strategies to mitigate this risk
 
 #### Enterprise-Grade Multi-Agent System: The Case of Startup Credit Scoring
 
-- Sự lệch pha giữa cấu trúc dữ liệu ngân hàng truyền thống và đặc thù dữ liệu của startup
-- Khi nào nên dùng single agent và khi nào cần chuyển sang multi-agent
-- Mô hình "Virtual Credit Committee" - nhiều agent đóng vai trò khác nhau trong quy trình thẩm định tín dụng
-- Các rào chắn (guardrails) và yêu cầu tuân thủ (compliance) cần thiết khi triển khai AI trong lĩnh vực tài chính
-- ROI vận hành và lộ trình triển khai thực tế
+- The mismatch between traditional banking data structures and startup-specific data characteristics
+- When to use a single agent vs. when a multi-agent approach is needed
+- The "Virtual Credit Committee" model — multiple agents playing different roles in the credit assessment process
+- Guardrails and compliance requirements when deploying AI in financial services
+- Operational ROI and a practical deployment roadmap
 
-### Những Gì Học Được
+### Key Takeaways
 
-#### Tư Duy Về AI & Sản Phẩm
+#### AI & Product Thinking
 
-- Context là yếu tố quyết định chất lượng output của AI, không chỉ đơn thuần là prompt hay hơn
-- Sản phẩm tốt thường ra đời từ áp lực thời gian và khả năng ra quyết định nhanh (bài học từ LotusHacks)
-- AI đang dịch chuyển từ công cụ hỗ trợ đơn lẻ sang hệ thống có trí nhớ và khả năng suy luận liên tục
+- Context is the deciding factor for AI output quality — it goes far beyond writing a better prompt
+- Great products often emerge from time pressure and the ability to make fast decisions (lesson from LotusHacks)
+- AI is evolving from a single-purpose tool toward a system with persistent memory and continuous reasoning
 
-#### Kiến Trúc & Hạ Tầng
+#### Architecture & Infrastructure
 
-- CloudFront không chỉ là CDN mà còn là lớp nền tảng cho bảo mật, hiệu năng và tối ưu chi phí
-- Hiểu rõ hơn về rủi ro non-determinism trong LLM, đặc biệt quan trọng khi xây dựng hệ thống cần khả năng tái lặp (reproducibility)
-- Multi-agent system là hướng tiếp cận phù hợp cho các bài toán nghiệp vụ phức tạp, nhiều bước ra quyết định như credit scoring
+- CloudFront is more than a CDN — it is a foundational layer for security, performance, and cost optimization
+- A deeper understanding of non-determinism risk in LLMs, which is especially critical when building systems that require reproducibility
+- Multi-agent systems are the right approach for complex, multi-step decision-making tasks like credit scoring
 
-#### Ứng Dụng AI Trong Doanh Nghiệp
+#### Enterprise AI Applications
 
-- Amazon Quick cho thấy xu hướng "AI hóa" các tác vụ vận hành và phân tích dữ liệu mà không cần kỹ năng lập trình
-- Việc thiết kế guardrails và compliance là bắt buộc khi đưa AI vào các lĩnh vực nhạy cảm như tài chính
+- Amazon Quick highlights the trend of "AI-ifying" operational and data analysis tasks without requiring programming skills
+- Designing guardrails and compliance frameworks is mandatory when introducing AI into sensitive domains such as finance
 
-### Ứng Dụng Vào Công Việc
+### Applying to Work
 
-- Áp dụng tư duy "context-first" khi thiết kế prompt và pipeline AI cho các tác vụ hiện tại
-- Cân nhắc sử dụng CloudFront cho các workload cần tối ưu chi phí và độ trễ trong dự án đang thực tập
-- Lưu ý về non-determinism khi kiểm thử và đánh giá kết quả từ LLM, tránh giả định kết quả luôn giống nhau dù cùng cấu hình
-- Tham khảo mô hình multi-agent khi thiết kế các workflow tự động hóa nhiều bước
-- Tìm hiểu thêm Amazon Quick như một công cụ tiềm năng hỗ trợ báo cáo và phân tích dữ liệu nội bộ
+- Apply a "context-first" mindset when designing prompts and AI pipelines for current tasks
+- Consider using CloudFront for workloads that need cost and latency optimization in the internship project
+- Be mindful of non-determinism when testing and evaluating LLM outputs — avoid assuming identical results even with the same configuration
+- Reference the multi-agent model when designing multi-step automation workflows
+- Explore Amazon Quick as a potential tool for supporting internal reporting and data analysis
 
-### Trải nghiệm trong event
+### Personal Experience at the Event
 
-Tham gia **FCAJ Community Day - Conference Call** tại Bitexco Financial Tower là một trải nghiệm đáng nhớ, giúp tôi được tiếp cận trực tiếp với các xu hướng công nghệ mới nhất từ AWS cũng như những câu chuyện thực chiến từ cộng đồng.
+Attending the **FCAJ Community Day - Conference Call** at Bitexco Financial Tower was a memorable experience. It gave me direct access to the latest technology trends from AWS and real-world stories from the community.
 
-#### Kết nối cộng đồng
+#### Community Connection
 
-- Được gặp gỡ và trao đổi trực tiếp với các bạn thực tập sinh khác trong chương trình FCAJ, cũng như đội ngũ mentor và diễn giả
-- Không khí sự kiện cởi mở, tạo cảm hứng cho việc học hỏi và chia sẻ kinh nghiệm
+- Had the opportunity to meet and exchange ideas directly with fellow FCAJ interns, as well as mentors and speakers
+- The open and welcoming atmosphere of the event was inspiring for learning and sharing experiences
 
-#### Trải nghiệm học thuật và kỹ thuật
+#### Academic and Technical Experience
 
-- Buổi chia sẻ về "Context Is Everything" giúp tôi thay đổi cách tiếp cận khi làm việc với AI, không chỉ dừng ở việc viết prompt mà còn quan tâm đến cách cung cấp và quản lý context
-- Câu chuyện từ đội LotusHacks về UTMorpho là nguồn cảm hứng lớn về tinh thần "làm thật, học thật" trong môi trường áp lực cao
-- Phần trình bày về non-determinism của LLM khiến tôi nhìn nhận lại các giả định trước đây về tính ổn định của mô hình AI
+- The "Context Is Everything" session changed how I approach working with AI — moving beyond writing prompts to thinking about how context is provided and managed
+- The LotusHacks team's story about UTMorpho was a powerful source of inspiration, embodying the spirit of "real learning through real doing" under high-pressure conditions
+- The presentation on LLM non-determinism made me reconsider previous assumptions about AI model consistency
 
-#### Bài học rút ra
+#### Lessons Learned
 
-- AI không chỉ là công cụ mà đang dần trở thành một phần hạ tầng cần được thiết kế cẩn trọng, từ context, độ tin cậy cho đến compliance
-- Việc kết hợp kiến thức nền tảng (cloud, kiến trúc hệ thống) với AI mới thực sự tạo ra giá trị bền vững cho doanh nghiệp
+- AI is not just a tool — it is gradually becoming a part of infrastructure that must be designed carefully, from context and reliability to compliance
+- Combining foundational knowledge (cloud, system architecture) with AI is what truly creates sustainable value for an organization
 
-#### Một số hình ảnh khi tham gia sự kiện
+#### Some Photos from the Event
 ![FCAJ Community Day - May](/images/Event1.jpg)

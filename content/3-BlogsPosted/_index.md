@@ -9,3 +9,9 @@ pre: " <b> 3. </b> "
 # PART 3: BLOGS POSTED
 
 In this section, the student presents blogs written and posted during the internship at FCAJ, sharing technical knowledge and experiences.
+
+### Blog List
+
+1. [Blog 1 — Samsung resolves the "price mismatch" problem with AWS Lambda Response Streaming](3.1-Blog1/)
+2. [Blog 2 — S3 Intelligent-Tiering: When your data storage "knows" which tier to stay in](3.2-Blog2/)
+3. [Blog 3](3.3-Blog3/)
