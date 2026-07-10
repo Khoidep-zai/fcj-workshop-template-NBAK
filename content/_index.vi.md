@@ -1,7 +1,8 @@
 ---
 title: "Báo cáo thực tập FCAJ"
 date: 2026-07-24
-chapter: true
+weight: 1
+chapter: false
 pre: ""
 ---
 

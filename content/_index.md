@@ -1,40 +1,51 @@
 ---
-title: "Internship Report"
+title: "Internship Report FCAJ"
 date: 2026-07-24
 weight: 1
 chapter: false
+pre: ""
 ---
 
-# Internship Report
+# FCAJ INTERNSHIP REPORT
 
-### Student Information:
-&emsp; **Full Name:** Nguyễn Bá Anh Khôi
+#### Overview
 
-&emsp; **Phone Number:** 0902094421
+**Internship Organization:** First Cloud AI Journey (FCAJ)
 
-&emsp; **Email:** khoibadk2005@gmail.com
+**Internship Duration:** 3 months (May - July 2026)
 
-&emsp; **University:** Van Lang University - VLU
+**Last Updated:** 24/07/2026
 
-&emsp; **Major:** Information Technology
+##### Student Internship Information:
 
-&emsp; **Class:** AWS052026
+**Full Name:** Nguyễn Bá Anh Khôi
 
-&emsp; **Internship Company:** Amazon Web Services Viet Nam Company Limited
+**Phone Number:** 0902094421
 
-&emsp; **Internship Position:** Workforce Bootcamp - First Cloud AI Journey
+**Email:** khoibadk2005@gmail.com
 
-&emsp; **Internship Duration:** From 04/05/2026 to 24/07/2026 (12 weeks)
+**University:** Van Lang University - VLU
+
+**Major:** Information Technology
+
+**Class:** AWS052026
+
+**Internship Company:** Amazon Web Services Viet Nam Company Limited
+
+**Internship Position:** Workforce Bootcamp - First Cloud AI Journey
+
+**Internship Period:** From 04/05/2026 to 24/07/2026
 
 ![Your profile picture](/images/avatar.jpg)
+
+
 
 ### Report Content
 
 1.  [Worklog](1-Worklog/)
 2.  [Proposal](2-Proposal/)
-3.  [BlogsPosted](3-BlogsPosted/)
+3.  [Blogs Posted](3-BlogsPosted/)
 4.  [Events Participated](4-EventParticipated/)
 5.  [Workshop](5-Workshop/)
 6.  [Self-evaluation](6-Self-evaluation/)
 7.  [Sharing and Feedback](7-Feedback/)
-

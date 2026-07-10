@@ -2,15 +2,15 @@
 title: "Sharing and Feedback"
 date: 2026-07-24
 weight: 7
-chapter: true
+chapter: false
 pre: " <b> 7. </b> "
 ---
+
+<div style="text-align: left;">
 
 # PART 7: SHARING AND FEEDBACK
 
 In this section, the intern freely shares personal feedback about their experience participating in the First Cloud AI Journey program, with the aim of helping the FCAJ team improve any shortcomings.
-
-<div style="text-align: left;">
 
 ## 1. General Feedback
 
@@ -24,22 +24,26 @@ In this section, the intern freely shares personal feedback about their experien
 
 - **Culture and Team Spirit:** The FCAJ culture was very positive: everyone respected each other, worked seriously but with a friendly atmosphere. This made me feel like a part of the team, even as an intern.
 
-</div>
-
 ## 2. Additional Questions
 
-- What did you enjoy most during your internship?
+- **What did you enjoy most during your internship?**
   The enthusiastic support from my mentor and the opportunity to work hands-on with modern AWS services.
-- What do you think the company should improve for future interns?
+
+- **What do you think the company should improve for future interns?**
   Providing more in-depth onboarding materials to help new interns get up to speed with the systems more quickly.
-- Would you recommend this internship to a friend? Why?
+
+- **Would you recommend this internship to a friend? Why?**
   Absolutely, because this is an ideal environment for developing real-world skills in AWS and AI/ML.
 
 ## 3. Suggestions and Wishes
 
-- Do you have any suggestions for improving the internship experience?
+- **Do you have any suggestions for improving the internship experience?**
   Organize more Tech Talk sessions where senior engineers share their experiences.
-- Would you like to continue participating in this program in the future?
+
+- **Would you like to continue participating in this program in the future?**
   I would very much hope to have the opportunity to continue with FCAJ.
-- Other feedback (open sharing):
+
+- **Other feedback (open sharing):**
   Thank you to the FCAJ team for providing such a meaningful and rewarding internship experience.
+
+</div>
