@@ -1,5 +1,6 @@
 ---
-title: "Blogs Posted"
+title: "PART 3: BLOGS POSTED"
+menuTitle: "Blogs posted"
 date: 2026-07-24
 weight: 3
 chapter: false
@@ -7,8 +8,6 @@ pre: " <b> 3. </b> "
 ---
 
 <div style="text-align: left;">
-
-# PART 3: BLOGS POSTED
 
 ### Blog List
 

@@ -1,5 +1,6 @@
 ---
 title: "PHẦN 2: BẢN ĐỀ XUẤT"
+menuTitle: "Bản đề xuất"
 date: 2026-07-24
 weight: 2
 chapter: false

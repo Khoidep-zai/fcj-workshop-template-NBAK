@@ -27,16 +27,16 @@ pre: ""
 
 &emsp; **Internship Duration:** From 04/05/2026 to 24/07/2026
 
-<div style="text-align: center;">
-  <img src="/images/avatar.jpg" width="240" style="border-radius: 8px; margin: 15px 0;" alt="Profile Picture" />
+<div style="display: flex; justify-content: center; width: 100%; margin: 20px 0;">
+  <img src="/images/avatar.jpg" width="240" style="border-radius: 8px;" alt="Profile Picture" />
 </div>
 
 ### Report Content
 
 1.  [Worklog](1-Worklog/)
 2.  [Proposal](2-Proposal/)
-3.  [Blogs Posted](3-BlogsPosted/)
-4.  [Events Participated](4-EventParticipated/)
+3.  [Blogs posted](3-BlogsPosted/)
+4.  [Events participated](4-EventParticipated/)
 5.  [Workshop](5-Workshop/)
 6.  [Self-evaluation](6-Self-evaluation/)
-7.  [Sharing and Feedback](7-Feedback/)
+7.  [Sharing and feedback](7-Feedback/)

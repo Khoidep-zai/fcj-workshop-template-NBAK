@@ -1,5 +1,6 @@
 ---
 title: "PHẦN 7: CHIA SẺ, ĐÓNG GÓP Ý KIẾN"
+menuTitle: "Chia sẻ, đóng góp ý kiến"
 date: 2026-07-24
 weight: 7
 chapter: false

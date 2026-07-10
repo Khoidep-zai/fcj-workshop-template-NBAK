@@ -1,5 +1,6 @@
 ---
 title: "PHẦN 1: NHẬT KÝ CÔNG VIỆC"
+menuTitle: "Nhật ký công việc"
 date: 2026-07-24
 weight: 1
 chapter: false

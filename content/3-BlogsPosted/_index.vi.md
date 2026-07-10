@@ -1,5 +1,6 @@
 ---
-title: "Các bài blogs đã đăng"
+title: "PHẦN 3: CÁC BÀI BLOGS ĐÃ ĐĂNG"
+menuTitle: "Các bài blogs đã đăng"
 date: 2026-07-24
 weight: 3
 chapter: false
@@ -7,8 +8,6 @@ pre: " <b> 3. </b> "
 ---
 
 <div style="text-align: left;">
-
-# PHẦN 3: CÁC BÀI BLOGS ĐÃ ĐĂNG
 
 ### Danh sách bài blog
 

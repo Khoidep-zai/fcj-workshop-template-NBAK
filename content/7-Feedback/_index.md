@@ -1,5 +1,6 @@
 ---
 title: "PART 7: SHARING AND FEEDBACK"
+menuTitle: "Sharing and feedback"
 date: 2026-07-24
 weight: 7
 chapter: false

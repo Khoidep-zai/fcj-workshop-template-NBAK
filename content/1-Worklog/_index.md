@@ -1,5 +1,6 @@
 ---
 title: "PART 1: WORK JOURNAL"
+menuTitle: "Worklog"
 date: 2026-07-24
 weight: 1
 chapter: false

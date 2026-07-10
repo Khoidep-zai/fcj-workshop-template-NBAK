@@ -1,5 +1,6 @@
 ---
 title: "PART 6: SELF-EVALUATION"
+menuTitle: "Self-evaluation"
 date: 2026-07-24
 weight: 6
 chapter: false

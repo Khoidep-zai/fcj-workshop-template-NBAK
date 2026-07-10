@@ -1,5 +1,6 @@
 ---
 title: "PHẦN 5: WORKSHOP"
+menuTitle: "Workshop"
 date: 2026-07-24
 weight: 5
 chapter: false

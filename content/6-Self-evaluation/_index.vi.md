@@ -1,5 +1,6 @@
 ---
 title: "PHẦN 6: TỰ ĐÁNH GIÁ"
+menuTitle: "Tự đánh giá"
 date: 2026-07-24
 weight: 6
 chapter: false

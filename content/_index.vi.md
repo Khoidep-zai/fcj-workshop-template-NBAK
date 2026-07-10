@@ -27,13 +27,13 @@ pre: ""
 
 &emsp; **Thời gian thực tập:** Từ ngày 04/05/2026 đến ngày 24/07/2026
 
-<div style="text-align: center;">
-  <img src="/images/avatar.jpg" width="240" style="border-radius: 8px; margin: 15px 0;" alt="Ảnh đại diện" />
+<div style="display: flex; justify-content: center; width: 100%; margin: 20px 0;">
+  <img src="/images/avatar.jpg" width="240" style="border-radius: 8px;" alt="Ảnh đại diện" />
 </div>
 
 ### Nội dung báo cáo
 
-1.  [Worklog](1-Worklog/)
+1.  [Nhật ký công việc](1-Worklog/)
 2.  [Bản đề xuất](2-Proposal/)
 3.  [Các bài blogs đã đăng](3-BlogsPosted/)
 4.  [Các events đã tham gia](4-EventParticipated/)
