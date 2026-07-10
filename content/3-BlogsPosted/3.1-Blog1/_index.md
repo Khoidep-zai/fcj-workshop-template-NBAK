@@ -62,10 +62,11 @@ Khi vận hành hệ thống E-commerce ở quy mô lớn, một trong những b
 * Cache luôn đi kèm đánh đổi giữa tốc độ và độ chính xác - với dữ liệu biến động liên tục như giá bán, độ chính xác quan trọng hơn
 * Tư duy **streaming** (trả kết quả ngay khi có, không đợi xử lý xong toàn bộ) là cách tiếp cận có thể áp dụng cho nhiều bài toán khác cần tổng hợp dữ liệu từ nhiều nguồn trong thời gian thực: danh mục sản phẩm, tồn kho, hệ thống gợi ý...
 
-...Hình ảnh...
-BlogsPosted\Blog1\Samsung_AWS.jpg
-...Link...
-Link bài viết gr AWS: https://www.facebook.com/groups/awsstudygroupfcj/permalink/2206091146822512/?rdid=jfPK4XhMGFR3lcR0#
-Link gốc bài viết: https://aws.amazon.com/blogs/architecture/how-samsung-achieved-real-time-pricing-with-aws-lambda-response-streaming/
+### Hình ảnh minh họa kiến trúc
 
-...Hướng dẫn...
+![Kiến trúc Real-time Pricing của Samsung trên AWS Lambda Response Streaming](/images/Samsung_AWS.jpg)
+
+### Nguồn tham khảo & Bài viết đã đăng
+
+- **Bài đăng trên cộng đồng AWS Study Group FCJ:** [Xem bài viết trên Facebook](https://www.facebook.com/groups/awsstudygroupfcj/permalink/2206091146822512/)
+- **Bài viết gốc từ AWS Architecture Blog:** [How Samsung achieved real-time pricing with AWS Lambda Response Streaming](https://aws.amazon.com/blogs/architecture/how-samsung-achieved-real-time-pricing-with-aws-lambda-response-streaming/)

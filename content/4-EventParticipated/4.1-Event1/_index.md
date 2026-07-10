@@ -114,6 +114,4 @@ Tham gia **FCAJ Community Day - Conference Call** tại Bitexco Financial Tower 
 - Việc kết hợp kiến thức nền tảng (cloud, kiến trúc hệ thống) với AI mới thực sự tạo ra giá trị bền vững cho doanh nghiệp
 
 #### Một số hình ảnh khi tham gia sự kiện
-* Thêm các hình ảnh của các bạn tại đây
-
-> Nhìn chung, sự kiện đã mang lại cho tôi góc nhìn toàn diện hơn về việc ứng dụng AI trong thực tế doanh nghiệp, đồng thời tạo động lực để tiếp tục học hỏi và thử nghiệm các công nghệ mới trong quá trình thực tập.
+![FCAJ Community Day - May](/images/Event1.jpg)

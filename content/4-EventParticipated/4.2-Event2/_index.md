@@ -107,6 +107,4 @@ Tham gia **FCAJ Community Day - June** là cơ hội để tôi tiếp tục c�
 - Bảo mật và khả năng mở rộng (extensibility) luôn phải được cân nhắc song song khi thiết kế hệ thống AI, không thể đánh đổi cái này lấy cái kia
 
 #### Một số hình ảnh khi tham gia sự kiện
-* Thêm các hình ảnh của các bạn tại đây
-
-> Nhìn chung, sự kiện tháng 6 đã củng cố thêm cho tôi bức tranh toàn cảnh về cách AI đang được ứng dụng xuyên suốt từ hạ tầng kỹ thuật đến vận hành doanh nghiệp, đồng thời nhắc nhở tầm quan trọng của bảo mật khi mở rộng các hệ thống AI trong thực tế.
+![FCAJ Community Day - June](/images/Event2.PNG)
