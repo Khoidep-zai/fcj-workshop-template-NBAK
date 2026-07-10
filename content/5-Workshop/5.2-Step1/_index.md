@@ -5,9 +5,6 @@ weight: 2
 chapter: false
 pre: " <b> 5.2. </b> "
 ---
-
-# Step 1: Set Up IAM Role for Lambda
-
 ### Introduction
 
 An IAM Role defines the permissions that Lambda uses to access the required AWS services in this workshop, including Amazon S3, Amazon SQS, Amazon Rekognition, and Amazon Textract.

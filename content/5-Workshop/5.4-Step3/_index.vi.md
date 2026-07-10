@@ -5,9 +5,6 @@ weight: 4
 chapter: false
 pre: " <b> 5.4. </b> "
 ---
-
-# Bước 3: Cấu hình lưu trữ và sự kiện Amazon S3
-
 ### Mục tiêu
 
 Trong bước này, bạn sẽ tạo S3 bucket để lưu ảnh và cấu hình để mỗi khi có ảnh mới được tải lên, Amazon S3 tự động gửi thông báo vào SQS queue đã tạo ở bước trước.

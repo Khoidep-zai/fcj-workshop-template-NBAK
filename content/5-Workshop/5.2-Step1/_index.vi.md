@@ -5,9 +5,6 @@ weight: 2
 chapter: false
 pre: " <b> 5.2. </b> "
 ---
-
-# Bước 1: Chuẩn bị IAM Role cho Lambda
-
 ### Giới thiệu
 
 IAM Role là quyền mà Lambda sử dụng để truy cập các dịch vụ AWS cần thiết trong workshop như Amazon S3, Amazon SQS, Amazon Rekognition và Amazon Textract.

@@ -5,9 +5,6 @@ weight: 6
 chapter: false
 pre: " <b> 5.6. </b> "
 ---
-
-# Bước 5: Kiểm thử hệ thống
-
 ### Mục tiêu
 
 Xác nhận toàn bộ luồng **S3 -> SQS -> Lambda -> AI** hoạt động đúng.

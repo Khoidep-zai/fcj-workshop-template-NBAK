@@ -5,9 +5,6 @@ weight: 7
 chapter: false
 pre: " <b> 5.7. </b> "
 ---
-
-# Bước 6: Dọn dẹp tài nguyên
-
 ### Mục tiêu
 
 Sau khi hoàn thành workshop, bạn cần xóa các tài nguyên đã tạo để tránh phát sinh chi phí không cần thiết.

@@ -5,9 +5,6 @@ weight: 4
 chapter: false
 pre: " <b> 5.4. </b> "
 ---
-
-# Step 3: Configure Amazon S3 Storage and Events
-
 ### Objective
 
 In this step, you will create an S3 bucket to store images and configure it so that every time a new image is uploaded, Amazon S3 automatically sends a notification to the SQS queue created in the previous step.

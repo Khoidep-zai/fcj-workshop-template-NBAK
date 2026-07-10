@@ -5,9 +5,6 @@ weight: 5
 chapter: false
 pre: " <b> 5.5. </b> "
 ---
-
-# Step 4: Create and Write Code for AWS Lambda
-
 ### Objective
 
 In this step, you will create a Lambda Function to receive messages from Amazon SQS, read information about images uploaded to Amazon S3, and call AI services such as Amazon Rekognition and Amazon Textract to analyze the images.

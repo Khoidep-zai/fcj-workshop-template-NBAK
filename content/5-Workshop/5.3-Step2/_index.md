@@ -5,9 +5,6 @@ weight: 3
 chapter: false
 pre: " <b> 5.3. </b> "
 ---
-
-# Step 2: Create an Amazon SQS Queue
-
 ### Introduction
 
 Amazon SQS acts as an intermediate queue between Amazon S3 and AWS Lambda.

@@ -5,9 +5,6 @@ weight: 6
 chapter: false
 pre: " <b> 5.6. </b> "
 ---
-
-# Step 5: Test the System
-
 ### Objective
 
 Verify that the entire **S3 → SQS → Lambda → AI** pipeline is working correctly.

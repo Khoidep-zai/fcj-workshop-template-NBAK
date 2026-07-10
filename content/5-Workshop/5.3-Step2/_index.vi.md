@@ -5,9 +5,6 @@ weight: 3
 chapter: false
 pre: " <b> 5.3. </b> "
 ---
-
-# Bước 2: Tạo hàng đợi tin nhắn Amazon SQS
-
 ### Giới thiệu
 
 Amazon SQS đóng vai trò là hàng đợi trung gian giữa Amazon S3 và AWS Lambda.

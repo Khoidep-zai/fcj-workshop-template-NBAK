@@ -5,9 +5,6 @@ weight: 7
 chapter: false
 pre: " <b> 5.7. </b> "
 ---
-
-# Step 6: Clean Up Resources
-
 ### Objective
 
 After completing the workshop, you need to delete the resources you created to avoid incurring unnecessary costs.
