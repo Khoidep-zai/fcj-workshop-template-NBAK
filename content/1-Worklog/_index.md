@@ -1,12 +1,10 @@
 ---
-title: "Worklog"
+title: "PART 1: WORK JOURNAL"
 date: 2026-07-24
 weight: 1
 chapter: false
 pre: " <b> 1. </b> "
 ---
-
-# PART 1: WORK JOURNAL
 
 The internship program was conducted over approximately 3 months (12 weeks) at First Cloud AI Journey (FCAJ), starting from 04/05/2026 to 24/07/2026, with the following weekly overview:
 

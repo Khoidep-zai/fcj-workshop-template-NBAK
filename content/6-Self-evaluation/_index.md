@@ -1,5 +1,5 @@
 ---
-title: "Self-evaluation"
+title: "PART 6: SELF-EVALUATION"
 date: 2026-07-24
 weight: 6
 chapter: false
@@ -7,8 +7,6 @@ pre: " <b> 6. </b> "
 ---
 
 <div style="text-align: left;">
-
-# PART 6: SELF-EVALUATION
 
 Throughout the internship at **First Cloud AI Journey (FCAJ)** from **04/05/2026 to 24/07/2026**, I had the opportunity to learn, practice, and apply the knowledge gained at university to a real-world work environment.
 

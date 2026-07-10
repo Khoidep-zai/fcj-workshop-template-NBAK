@@ -1,12 +1,12 @@
 ---
-title: "Bản đề xuất"
+title: "PHẦN 2: BẢN ĐỀ XUẤT"
 date: 2026-07-24
 weight: 2
 chapter: false
 pre: " <b> 2. </b> "
 ---
 
-# Giải pháp tự động hóa giám sát chất lượng hàng hóa dựa trên Serverless và AI/ML
+# GIẢI PHÁP TỰ ĐỘNG HÓA GIÁM SÁT CHẤT LƯỢNG HÀNG HÓA DỰA TRÊN SERVERLESS VÀ AI/ML
 
 ### Tóm tắt điều hành
 

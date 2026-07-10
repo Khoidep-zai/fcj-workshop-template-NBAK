@@ -8,42 +8,33 @@ pre: ""
 
 # BÁO CÁO THỰC TẬP FCAJ
 
-#### Tổng quan
+### Thông tin sinh viên:
+&emsp; **Họ và tên:** Nguyễn Bá Anh Khôi
 
-**Đơn vị thực tập:** First Cloud AI Journey (FCAJ)
+&emsp; **Số điện thoại:** 0902094421
 
-**Thời gian thực tập:** 3 tháng (Tháng 5 - Tháng 7/2026)
+&emsp; **Email:** khoibadk2005@gmail.com
 
-**Cập nhật lần cuối:** 24/07/2026
+&emsp; **Trường:** Đại học Văn Lang - VLU
 
-##### Thông tin sinh viên thực tập:
+&emsp; **Ngành:** Công nghệ thông tin
 
-**Họ và tên:** Nguyễn Bá Anh Khôi
+&emsp; **Lớp:** AWS052026
 
-**Số điện thoại:** 0902094421
+&emsp; **Công ty thực tập:** Công ty TNHH Amazon Web Services Viet Nam
 
-**Email:** khoibadk2005@gmail.com
+&emsp; **Vị trí thực tập:** Workforce Bootcamp - First Cloud AI Journey
 
-**Trường:** Đại học Văn Lang - VLU
+&emsp; **Thời gian thực tập:** Từ ngày 04/05/2026 đến ngày 24/07/2026
 
-**Chuyên ngành:** Công nghệ thông tin
-
-**Lớp:** AWS052026
-
-**Công ty thực tập:** Công ty TNHH Amazon Web Services Viet Nam
-
-**Vị trí thực tập:** Workforce Bootcamp - First Cloud AI Journey
-
-**Thời gian thực tập:** Từ ngày 04/05/2026 đến ngày 24/07/2026
-
-<img src="/images/avatar.jpg" width="180" style="border-radius: 8px; display: block; margin: 15px 0;" alt="Ảnh đại diện" />
-
-
+<div style="text-align: center;">
+  <img src="/images/avatar.jpg" width="240" style="border-radius: 8px; margin: 15px 0;" alt="Ảnh đại diện" />
+</div>
 
 ### Nội dung báo cáo
 
 1.  [Worklog](1-Worklog/)
-2.  [Proposal](2-Proposal/)
+2.  [Bản đề xuất](2-Proposal/)
 3.  [Các bài blogs đã đăng](3-BlogsPosted/)
 4.  [Các events đã tham gia](4-EventParticipated/)
 5.  [Workshop](5-Workshop/)

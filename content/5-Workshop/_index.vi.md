@@ -1,5 +1,5 @@
 ---
-title: "Workshop"
+title: "PHẦN 5: WORKSHOP"
 date: 2026-07-24
 weight: 5
 chapter: false
@@ -7,8 +7,6 @@ pre: " <b> 5. </b> "
 ---
 
 <div style="text-align: left;">
-
-# PHẦN 5: WORKSHOP
 
 ### Nội dung
 

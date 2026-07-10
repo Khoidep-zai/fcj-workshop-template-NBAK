@@ -1,12 +1,12 @@
 ---
-title: "Proposal"
+title: "PART 2: PROPOSAL"
 date: 2026-07-24
 weight: 2
 chapter: false
 pre: " <b> 2. </b> "
 ---
 
-# Automated Cargo Quality Monitoring Solution Based on Serverless and AI/ML
+# AUTOMATED CARGO QUALITY MONITORING SOLUTION BASED ON SERVERLESS AND AI/ML
 
 ### Executive Summary
 

@@ -8,37 +8,28 @@ pre: ""
 
 # FCAJ INTERNSHIP REPORT
 
-#### Overview
+### Student Information:
+&emsp; **Full Name:** Nguyễn Bá Anh Khôi
 
-**Internship Organization:** First Cloud AI Journey (FCAJ)
+&emsp; **Phone Number:** 0902094421
 
-**Internship Duration:** 3 months (May - July 2026)
+&emsp; **Email:** khoibadk2005@gmail.com
 
-**Last Updated:** 24/07/2026
+&emsp; **University:** Van Lang University - VLU
 
-##### Student Internship Information:
+&emsp; **Major:** Information Technology
 
-**Full Name:** Nguyễn Bá Anh Khôi
+&emsp; **Class:** AWS052026
 
-**Phone Number:** 0902094421
+&emsp; **Internship Company:** Amazon Web Services Viet Nam Company Limited
 
-**Email:** khoibadk2005@gmail.com
+&emsp; **Internship Position:** Workforce Bootcamp - First Cloud AI Journey
 
-**University:** Van Lang University - VLU
+&emsp; **Internship Duration:** From 04/05/2026 to 24/07/2026
 
-**Major:** Information Technology
-
-**Class:** AWS052026
-
-**Internship Company:** Amazon Web Services Viet Nam Company Limited
-
-**Internship Position:** Workforce Bootcamp - First Cloud AI Journey
-
-**Internship Period:** From 04/05/2026 to 24/07/2026
-
-<img src="/images/avatar.jpg" width="180" style="border-radius: 8px; display: block; margin: 15px 0;" alt="Profile Picture" />
-
-
+<div style="text-align: center;">
+  <img src="/images/avatar.jpg" width="240" style="border-radius: 8px; margin: 15px 0;" alt="Profile Picture" />
+</div>
 
 ### Report Content
 

@@ -1,5 +1,5 @@
 ---
-title: "Tự đánh giá"
+title: "PHẦN 6: TỰ ĐÁNH GIÁ"
 date: 2026-07-24
 weight: 6
 chapter: false
@@ -7,8 +7,6 @@ pre: " <b> 6. </b> "
 ---
 
 <div style="text-align: left;">
-
-# PHẦN 6: TỰ ĐÁNH GIÁ
 
 Trong suốt thời gian thực tập tại **First Cloud AI Journey (FCAJ)** từ ngày **04/05/2026 đến 24/07/2026**, tôi đã có cơ hội học hỏi, rèn luyện và áp dụng kiến thức được trang bị tại trường vào môi trường làm việc thực tế.
 

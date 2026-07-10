@@ -1,5 +1,5 @@
 ---
-title: "Sharing and Feedback"
+title: "PART 7: SHARING AND FEEDBACK"
 date: 2026-07-24
 weight: 7
 chapter: false
@@ -8,8 +8,7 @@ pre: " <b> 7. </b> "
 
 <div style="text-align: left;">
 
-# PART 7: SHARING AND FEEDBACK
-
+In this section, the intern freely shares personal feedback about their experience participating in the First Cloud AI Journey program, with the aim of helping the FCAJ team improve any shortcomings.
 
 ## 1. General Feedback
 

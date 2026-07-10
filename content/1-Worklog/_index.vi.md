@@ -1,12 +1,10 @@
 ---
-title: "Nhật ký công việc"
+title: "PHẦN 1: NHẬT KÝ CÔNG VIỆC"
 date: 2026-07-24
 weight: 1
 chapter: false
 pre: " <b> 1. </b> "
 ---
-
-# PHẦN 1: NHẬT KÝ CÔNG VIỆC
 
 Chương trình thực tập được thực hiện trong khoảng 3 tháng (12 tuần) tại First Cloud AI Journey (FCAJ), bắt đầu từ ngày 04/05/2026 đến 24/07/2026, với nội dung tổng quan các tuần như sau:
 
