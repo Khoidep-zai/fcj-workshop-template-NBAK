@@ -10,7 +10,6 @@ pre: " <b> 7. </b> "
 
 # PHẦN 7: CHIA SẺ, ĐÓNG GÓP Ý KIẾN
 
-Trong phần này, sinh viên tự do đóng góp ý kiến cá nhân về những trải nghiệm khi tham gia chương trình First Cloud AI Journey, giúp team FCAJ cải thiện những vấn đề còn thiếu sót.
 
 ## 1. Đánh giá chung
 

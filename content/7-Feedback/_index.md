@@ -10,7 +10,6 @@ pre: " <b> 7. </b> "
 
 # PART 7: SHARING AND FEEDBACK
 
-In this section, the intern freely shares personal feedback about their experience participating in the First Cloud AI Journey program, with the aim of helping the FCAJ team improve any shortcomings.
 
 ## 1. General Feedback
 
