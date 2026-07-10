@@ -1,12 +1,11 @@
 ---
-title: "Week 2"
+title: "Week 2: Amazon S3, SQS, and Event-Driven Architecture (11/05/2026 - 15/05/2026)"
+menuTitle: "Week 2"
 date: 2026-07-24
 weight: 2
 chapter: false
 pre: " <b> 1.2. </b> "
 ---
-
-## Week 2: Amazon S3, SQS, and Event-Driven Architecture (11/05/2026 - 15/05/2026)
 
 **Week 2 Objectives:**
 

@@ -1,12 +1,11 @@
 ---
-title: "Tuần 10"
+title: "Tuần 10: Phát triển frontend - Dashboard giám sát hàng hóa (06/07/2026 - 10/07/2026)"
+menuTitle: "Tuần 10"
 date: 2026-07-24
 weight: 10
 chapter: false
 pre: " <b> 1.10. </b> "
 ---
-
-## Tuần 10: Phát triển frontend - Dashboard giám sát hàng hóa (06/07/2026 - 10/07/2026)
 
 **Mục tiêu tuần 10:**
 

@@ -9,8 +9,6 @@ pre: " <b> 7. </b> "
 
 <div style="text-align: left;">
 
-In this section, the intern freely shares personal feedback about their experience participating in the First Cloud AI Journey program, with the aim of helping the FCAJ team improve any shortcomings.
-
 ## 1. General Feedback
 
 - **Work Environment:** The work environment was very friendly and open. Members of the FCAJ team were always ready to help when I encountered difficulties, even outside of working hours. The workspace was tidy and comfortable, which helped me stay focused.

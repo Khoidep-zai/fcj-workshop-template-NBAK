@@ -1,12 +1,11 @@
 ---
-title: "Week 11"
+title: "Week 11: Comprehensive Testing, Blog Writing, and Workshop Participation (13/07/2026 - 17/07/2026)"
+menuTitle: "Week 11"
 date: 2026-07-24
 weight: 11
 chapter: false
 pre: " <b> 1.11. </b> "
 ---
-
-## Week 11: Comprehensive Testing, Blog Writing, and Workshop Participation (13/07/2026 - 17/07/2026)
 
 **Week 11 Objectives:**
 

@@ -1,12 +1,11 @@
 ---
-title: "Tuần 2"
+title: "Tuần 2: Amazon S3, SQS và kiến trúc Event-Driven (11/05/2026 - 15/05/2026)"
+menuTitle: "Tuần 2"
 date: 2026-07-24
 weight: 2
 chapter: false
 pre: " <b> 1.2. </b> "
 ---
-
-## Tuần 2: Amazon S3, SQS và kiến trúc Event-Driven (11/05/2026 - 15/05/2026)
 
 **Mục tiêu tuần 2:**
 

@@ -1,12 +1,11 @@
 ---
-title: "Week 3"
+title: "Week 3: AWS Lambda and Asynchronous Image Processing (18/05/2026 - 22/05/2026)"
+menuTitle: "Week 3"
 date: 2026-07-24
 weight: 3
 chapter: false
 pre: " <b> 1.3. </b> "
 ---
-
-## Week 3: AWS Lambda and Asynchronous Image Processing (18/05/2026 - 22/05/2026)
 
 **Week 3 Objectives:**
 

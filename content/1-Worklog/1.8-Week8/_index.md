@@ -1,12 +1,11 @@
 ---
-title: "Week 8"
+title: "Week 8: AWS Amplify and Frontend UI Construction (22/06/2026 - 26/06/2026)"
+menuTitle: "Week 8"
 date: 2026-07-24
 weight: 8
 chapter: false
 pre: " <b> 1.8. </b> "
 ---
-
-## Week 8: AWS Amplify and Frontend UI Construction (22/06/2026 - 26/06/2026)
 
 **Week 8 Objectives:**
 

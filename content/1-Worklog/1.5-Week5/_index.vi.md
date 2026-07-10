@@ -1,12 +1,11 @@
 ---
-title: "Tuần 5"
+title: "Tuần 5: Amazon DynamoDB và lưu trữ kết quả phân tích (01/06/2026 - 05/06/2026)"
+menuTitle: "Tuần 5"
 date: 2026-07-24
 weight: 5
 chapter: false
 pre: " <b> 1.5. </b> "
 ---
-
-## Tuần 5: Amazon DynamoDB và lưu trữ kết quả phân tích (01/06/2026 - 05/06/2026)
 
 **Mục tiêu tuần 5:**
 

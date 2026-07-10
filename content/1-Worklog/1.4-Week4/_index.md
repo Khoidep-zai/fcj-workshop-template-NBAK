@@ -1,12 +1,11 @@
 ---
-title: "Week 4"
+title: "Week 4: Amazon Rekognition and Textract — AI/ML Image Analysis (25/05/2026 - 29/05/2026)"
+menuTitle: "Week 4"
 date: 2026-07-24
 weight: 4
 chapter: false
 pre: " <b> 1.4. </b> "
 ---
-
-## Week 4: Amazon Rekognition and Textract — AI/ML Image Analysis (25/05/2026 - 29/05/2026)
 
 **Week 4 Objectives:**
 

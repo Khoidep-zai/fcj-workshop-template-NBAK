@@ -1,12 +1,11 @@
 ---
-title: "Tuần 7"
+title: "Tuần 7: Amazon Cognito và bảo mật truy cập (15/06/2026 - 19/06/2026)"
+menuTitle: "Tuần 7"
 date: 2026-07-24
 weight: 7
 chapter: false
 pre: " <b> 1.7. </b> "
 ---
-
-## Tuần 7: Amazon Cognito và bảo mật truy cập (15/06/2026 - 19/06/2026)
 
 **Mục tiêu tuần 7:**
 

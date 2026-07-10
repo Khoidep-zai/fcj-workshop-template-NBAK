@@ -1,12 +1,11 @@
 ---
-title: "Tuần 9"
+title: "Tuần 9: Phát triển backend - tích hợp Lambda, S3, SQS, AI/ML (29/06/2026 - 03/07/2026)"
+menuTitle: "Tuần 9"
 date: 2026-07-24
 weight: 9
 chapter: false
 pre: " <b> 1.9. </b> "
 ---
-
-## Tuần 9: Phát triển backend - tích hợp Lambda, S3, SQS, AI/ML (29/06/2026 - 03/07/2026)
 
 **Mục tiêu tuần 9:**
 

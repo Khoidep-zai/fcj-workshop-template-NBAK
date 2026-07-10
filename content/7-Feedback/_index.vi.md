@@ -9,8 +9,6 @@ pre: " <b> 7. </b> "
 
 <div style="text-align: left;">
 
-Trong phần này, sinh viên tự do đóng góp ý kiến cá nhân về những trải nghiệm khi tham gia chương trình First Cloud AI Journey, giúp team FCAJ cải thiện những vấn đề còn thiếu sót.
-
 ## 1. Đánh giá chung
 
 - **Môi trường làm việc:** Môi trường làm việc rất thân thiện và cởi mở. Các thành viên trong FCAJ luôn sẵn sàng hỗ trợ khi mình gặp khó khăn, kể cả ngoài giờ làm việc. Không gian làm việc gọn gàng, thoải mái, giúp mình tập trung tốt hơn.

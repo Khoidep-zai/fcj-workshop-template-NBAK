@@ -1,12 +1,11 @@
 ---
-title: "Tuần 3"
+title: "Tuần 3: AWS Lambda và xử lý ảnh bất đồng bộ (18/05/2026 - 22/05/2026)"
+menuTitle: "Tuần 3"
 date: 2026-07-24
 weight: 3
 chapter: false
 pre: " <b> 1.3. </b> "
 ---
-
-## Tuần 3: AWS Lambda và xử lý ảnh bất đồng bộ (18/05/2026 - 22/05/2026)
 
 **Mục tiêu tuần 3:**
 

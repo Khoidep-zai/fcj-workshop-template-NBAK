@@ -1,12 +1,11 @@
 ---
-title: "Week 10"
+title: "Week 10: Frontend Development — Cargo Monitoring Dashboard (06/07/2026 - 10/07/2026)"
+menuTitle: "Week 10"
 date: 2026-07-24
 weight: 10
 chapter: false
 pre: " <b> 1.10. </b> "
 ---
-
-## Week 10: Frontend Development — Cargo Monitoring Dashboard (06/07/2026 - 10/07/2026)
 
 **Week 10 Objectives:**
 

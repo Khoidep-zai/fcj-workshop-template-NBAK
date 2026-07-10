@@ -1,12 +1,11 @@
 ---
-title: "Tuần 8"
+title: "Tuần 8: AWS Amplify và xây dựng giao diện Frontend (22/06/2026 - 26/06/2026)"
+menuTitle: "Tuần 8"
 date: 2026-07-24
 weight: 8
 chapter: false
 pre: " <b> 1.8. </b> "
 ---
-
-## Tuần 8: AWS Amplify và xây dựng giao diện Frontend (22/06/2026 - 26/06/2026)
 
 **Mục tiêu tuần 8:**
 

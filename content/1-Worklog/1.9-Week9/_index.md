@@ -1,12 +1,11 @@
 ---
-title: "Week 9"
+title: "Week 9: Backend Development — Lambda, S3, SQS, and AI/ML Integration (29/06/2026 - 03/07/2026)"
+menuTitle: "Week 9"
 date: 2026-07-24
 weight: 9
 chapter: false
 pre: " <b> 1.9. </b> "
 ---
-
-## Week 9: Backend Development — Lambda, S3, SQS, and AI/ML Integration (29/06/2026 - 03/07/2026)
 
 **Week 9 Objectives:**
 

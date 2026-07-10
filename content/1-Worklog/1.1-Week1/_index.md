@@ -1,12 +1,11 @@
 ---
-title: "Week 1"
+title: "Week 1: Getting Familiar with AWS and Core Services (04/05/2026 - 08/05/2026)"
+menuTitle: "Week 1"
 date: 2026-07-24
 weight: 1
 chapter: false
 pre: " <b> 1.1. </b> "
 ---
-
-## Week 1: Getting Familiar with AWS and Core Services (04/05/2026 - 08/05/2026)
 
 **Week 1 Objectives:**
 

@@ -1,12 +1,11 @@
 ---
-title: "Week 5"
+title: "Week 5: Amazon DynamoDB and Analysis Result Storage (01/06/2026 - 05/06/2026)"
+menuTitle: "Week 5"
 date: 2026-07-24
 weight: 5
 chapter: false
 pre: " <b> 1.5. </b> "
 ---
-
-## Week 5: Amazon DynamoDB and Analysis Result Storage (01/06/2026 - 05/06/2026)
 
 **Week 5 Objectives:**
 

@@ -1,12 +1,11 @@
 ---
-title: "Tuần 1"
+title: "Tuần 1: Làm quen với AWS và các dịch vụ cơ bản (04/05/2026 - 08/05/2026)"
+menuTitle: "Tuần 1"
 date: 2026-07-24
 weight: 1
 chapter: false
 pre: " <b> 1.1. </b> "
 ---
-
-## Tuần 1: Làm quen với AWS và các dịch vụ cơ bản (04/05/2026 - 08/05/2026)
 
 **Mục tiêu tuần 1:**
 

@@ -9,6 +9,10 @@ pre: " <b> 5. </b> "
 
 <div style="text-align: left;">
 
+### Workshop Summary
+
+This workshop guides you through building an asynchronous image processing pipeline using an Event-Driven architecture on AWS, solving the challenge of concurrent user image uploads while ensuring high stability, scalability, and cost efficiency.
+
 ### Content
 
 1. [5.1 — Workshop Overview](5.1-WorkshopOverview/)

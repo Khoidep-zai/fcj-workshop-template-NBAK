@@ -1,12 +1,11 @@
 ---
-title: "Week 7"
+title: "Week 7: Amazon Cognito and Access Security (15/06/2026 - 19/06/2026)"
+menuTitle: "Week 7"
 date: 2026-07-24
 weight: 7
 chapter: false
 pre: " <b> 1.7. </b> "
 ---
-
-## Week 7: Amazon Cognito and Access Security (15/06/2026 - 19/06/2026)
 
 **Week 7 Objectives:**
 

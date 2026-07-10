@@ -1,12 +1,11 @@
 ---
-title: "Tuần 11"
+title: "Tuần 11: Kiểm thử toàn diện, viết blog và tham gia workshop (13/07/2026 - 17/07/2026)"
+menuTitle: "Tuần 11"
 date: 2026-07-24
 weight: 11
 chapter: false
 pre: " <b> 1.11. </b> "
 ---
-
-## Tuần 11: Kiểm thử toàn diện, viết blog và tham gia workshop (13/07/2026 - 17/07/2026)
 
 **Mục tiêu tuần 11:**
 

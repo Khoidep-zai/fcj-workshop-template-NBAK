@@ -1,12 +1,11 @@
 ---
-title: "Tuần 6"
+title: "Tuần 6: Amazon API Gateway và thiết kế RESTful API (08/06/2026 - 12/06/2026)"
+menuTitle: "Tuần 6"
 date: 2026-07-24
 weight: 6
 chapter: false
 pre: " <b> 1.6. </b> "
 ---
-
-## Tuần 6: Amazon API Gateway và thiết kế RESTful API (08/06/2026 - 12/06/2026)
 
 **Mục tiêu tuần 6:**
 

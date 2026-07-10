@@ -1,12 +1,11 @@
 ---
-title: "Week 6"
+title: "Week 6: Amazon API Gateway and RESTful API Design (08/06/2026 - 12/06/2026)"
+menuTitle: "Week 6"
 date: 2026-07-24
 weight: 6
 chapter: false
 pre: " <b> 1.6. </b> "
 ---
-
-## Week 6: Amazon API Gateway and RESTful API Design (08/06/2026 - 12/06/2026)
 
 **Week 6 Objectives:**
 

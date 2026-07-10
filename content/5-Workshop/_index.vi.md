@@ -9,6 +9,10 @@ pre: " <b> 5. </b> "
 
 <div style="text-align: left;">
 
+### Tóm tắt về workshop
+
+Workshop này hướng dẫn bạn xây dựng một luồng xử lý ảnh bất đồng bộ (asynchronous) theo mô hình Event‑Driven trên AWS, giải quyết bài toán “nhiều người dùng upload ảnh cùng lúc” nhưng vẫn đảm bảo hệ thống ổn định, dễ mở rộng và kiểm soát chi phí.
+
 ### Nội dung
 
 1. [5.1 — Tổng quan Workshop](5.1-WorkshopOverview/)
