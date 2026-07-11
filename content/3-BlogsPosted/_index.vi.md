@@ -13,6 +13,6 @@ pre: " <b> 3. </b> "
 
 1. [Blog 1 — Samsung xử lý bài toán "giá bị lệch" nhờ AWS Lambda Response Streaming](3.1-Blog1/)
 2. [Blog 2 — S3 Intelligent-Tiering: Khi lưu trữ dữ liệu tự "biết" nên nằm ở tầng nào](3.2-Blog2/)
-3. [Blog 3](3.3-Blog3/)
+3. [Blog 3 — Đảm bảo công bằng trong game: Phát hiện và ngăn chặn gian lận qua ảnh đại diện với Amazon Textract](3.3-Blog3/)
 
 </div>
