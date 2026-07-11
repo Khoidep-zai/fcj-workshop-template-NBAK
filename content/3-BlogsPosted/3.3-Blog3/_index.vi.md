@@ -48,4 +48,5 @@ Trong quá trình phát triển và vận hành các trò chơi trực tuyến n
 
 ### Nguồn tham khảo & Bài viết đã đăng
 
+- **Bài đăng trên cộng đồng AWS Study Group FCJ:** [Xem bài viết trên Facebook]()
 - **Bài viết gốc từ AWS GameTech Blog:** [Ensuring fair play by detecting and preventing profile alterations with Amazon Textract](https://aws.amazon.com/blogs/gametech/ensuring-fair-play-by-detecting-and-preventing-profile-alterations-with-amazon-textract/)
