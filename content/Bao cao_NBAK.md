@@ -740,7 +740,7 @@ Khi xây dựng data lake trên S3, một bài toán thường gặp là dữ li
 ![Cơ chế hoạt động của Amazon S3 Intelligent-Tiering](../static/images/Intelligent-Tiering.jpg)
 
 ### Nguồn tham khảo
-- **Bài đăng trên cộng đồng AWS Study Group FCJ:** [Xem bài viết trên Facebook](https://www.facebook.com/groups/awsstudygroupfcj/permalink/2205182253580068/?rdid=npZRVT1ZR54BwOQp#)
+- **Bài đăng trên cộng đồng AWS Study Group FCJ:** [Xem bài viết trên Facebook](https://www.facebook.com/groups/awsstudygroupfcj/permalink/2205182253580068/)
 - **Bài viết gốc từ AWS Storage Blog:** [Manage Amazon S3 storage costs granularly and at scale using S3 Intelligent-Tiering](https://aws.amazon.com/vi/blogs/storage/manage-amazon-s3-storage-costs-granularly-and-at-scale-using-s3-intelligent-tiering/)
 
 ---
@@ -787,7 +787,7 @@ Trong quá trình phát triển và vận hành các trò chơi trực tuyến n
 
 ### Nguồn tham khảo & Bài viết đã đăng
 
-- **Bài đăng trên cộng đồng AWS Study Group FCJ:** [Xem bài viết trên Facebook]()
+- **Bài đăng trên cộng đồng AWS Study Group FCJ:** [Xem bài viết trên Facebook](https://www.facebook.com/groups/awsstudygroupfcj/permalink/2208219406609686/)
 - **Bài viết gốc từ AWS GameTech Blog:** [Ensuring fair play by detecting and preventing profile alterations with Amazon Textract](https://aws.amazon.com/blogs/gametech/ensuring-fair-play-by-detecting-and-preventing-profile-alterations-with-amazon-textract/)
 
 ---

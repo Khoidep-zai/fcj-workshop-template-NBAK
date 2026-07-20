@@ -50,5 +50,5 @@ When building a data lake on Amazon S3, a common challenge is that data volume g
 
 ### References & Published Posts
 
-- **Post on AWS Study Group FCJ Community:** [View post on Facebook](https://www.facebook.com/groups/awsstudygroupfcj/permalink/2205182253580068/?rdid=npZRVT1ZR54BwOQp#)
+- **Post on AWS Study Group FCJ Community:** [View post on Facebook](https://www.facebook.com/groups/awsstudygroupfcj/permalink/2205182253580068/)
 - **Original AWS Storage Blog Post:** [Manage Amazon S3 storage costs granularly and at scale using S3 Intelligent-Tiering](https://aws.amazon.com/blogs/storage/manage-amazon-s3-storage-costs-granularly-and-at-scale-using-s3-intelligent-tiering/)
